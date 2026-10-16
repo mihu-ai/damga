@@ -1,0 +1,2 @@
+LANG = "de"
+NAME = "German"

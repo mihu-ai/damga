@@ -1,0 +1,102 @@
+# spoken<TAB>written (German ITN).  Lone numbers up to twelve stay words, as German is written.
+zwei berichte	zwei berichte
+ein mann	ein mann
+eine frau	eine frau
+zum dritten mal	zum dritten mal
+fünfundfünfzig änderungsanträge	55 änderungsanträge
+dreizehn	13
+hunderteins	101
+einhundertzwanzig	120
+tausendfünfhundert menschen	1500 Menschen
+eintausend	1000
+fünfundzwanzigtausend	25.000
+hunderttausend	100.000
+zwei millionen fünfhunderttausend	2.500.000
+vierzig millionen	40 Millionen
+eine million menschen	1 Million Menschen
+seit neunzehnhundertneunzig	seit 1990
+im jahr zweitausendvierzehn	im jahr 2014
+zwotausendzwölf	2012
+minus fünf grad	-5 Grad
+elf komma zwei	11,2
+null komma fünfzehn	0,15
+null komma eins fünf	0,15
+zwei komma fünf gigawatt	2,5 Gigawatt
+fünf komma vier milliarden dollar	5,4 Milliarden Dollar
+zehn millionen euro	10 Millionen Euro
+drei euro	3 Euro
+ein euro fünfzig	1,50 Euro
+fünf prozent	5 Prozent
+fünf komma neun prozent der exporte	5,9 Prozent der exporte
+am dritten oktober zweitausendzwölf	am 3. Oktober 2012
+der dritte oktober ist ein feiertag	der 3. Oktober ist ein feiertag
+vom neunzehnten und zwanzigsten märz	vom 19. und 20. März
+im zwanzigsten jahrhundert	im 20. jahrhundert
+um fünfzehn uhr dreißig	um 15.30 Uhr
+um neun uhr	um 9 Uhr
+neun uhr fünf	9.05 Uhr
+ein siebenundvierzigjähriger lehrer	ein 47-jähriger lehrer
+ein dreijähriges kind	ein dreijähriges kind
+zwanzigfach	20-fach
+gemäß artikel hundertdreiundzwanzig absatz zwei	gemäß artikel 123 absatz 2
+Ziffer acht	Ziffer 8
+schreiben sie an ali punkt veli at gmx punkt de	schreiben sie an ali.veli@gmx.de
+w w w punkt europa punkt eu	www.europa.eu
+beziehungsweise	bzw.
+Herr Präsident, wir haben zwei Berichte und fünfundfünfzig Änderungsanträge.	Herr Präsident, wir haben zwei Berichte und 55 Änderungsanträge.
+im jahr zwanzig zwanzig	im jahr 2020
+zwanzigzwanzig	2020
+bis zwanzig dreißig	bis 2030
+zwanzig dreizehn	2013
+zweitausendundsiebzehn	2017
+zwotausendelf	2011
+tausendundeins	1001
+zweieinhalb Jahre	zweieinhalb Jahre
+am dritten zehnten zweitausendzwölf	am 3.10.2012
+vom dreiundzwanzigsten elften	vom 23.11.
+# telephone numbers dictated digit by digit (or in pairs) after "plus" and a country code, or from "null" (8+ digits)
+ruf an plus vier neun drei null eins zwei drei vier fünf sechs sieben acht	ruf an +49 30 12345678
+meine Nummer ist null eins sieben eins eins zwei drei vier fünf sechs sieben	meine Nummer ist 0171 1234567
+null drei null eins zwei drei vier fünf sechs sieben acht	030 12345678
+plus neunundvierzig dreißig zwölf vierunddreißig sechsundfünfzig siebenundachtzig	+49 30 12345687
+plus vier neun null drei null eins zwei drei vier fünf sechs sieben acht	+49 30 12345678
+null null vier neun acht neun eins zwei drei vier fünf sechs sieben	0049 89 1234567
+null zwo zwo eins eins zwo drei vier fünf sechs	0221 123456
+null sieben elf eins zwei drei vier fünf sechs	0711 123456
+null eins fünf zwei eins zwei drei vier fünf sechs sieben acht	0152 12345678
+null drei null, eins zwei drei, vier fünf sechs sieben	030 1234567
+plus vier drei eins eins zwei drei vier fünf sechs sieben	+43 11234567
+null sechs eins null eins zwei drei vier fünf sechs	0610123456
+Meine Nummer ist null drei null eins zwei drei vier fünf sechs sieben acht.	Meine Nummer ist 030 12345678.
+eins zwei drei vier fünf sechs sieben acht	eins zwei drei vier fünf sechs sieben acht
+null eins zwei drei	null eins zwei drei
+null drei null eins zwei drei	null drei null eins zwei drei
+plus vier neun drei null eins zwei	plus vier neun drei null eins zwei
+plus fünf grad	plus 5 Grad
+zwei null null fünf	zwei null null fünf
+es steht null zu eins	es steht null zu eins
+# a number said in pieces (some recognizers write it so) is joined around "hundert"/"tausend"/a scale word
+drei hundert sieben und achtzig	387
+sieben hundert und sechzig	760
+drei tausend vierzig	3040
+minus acht und vierzig tausend zwei und sechzig	-48.062
+zwei millionen drei hundert neun und vierzig tausend sechs hundert fünf und achtzig	2.349.685
+sieben und neunzig millionen	97 Millionen
+vier hundert zwölf komma sieben null fünf	412,705
+sieben und zwanzigster märz zwei tausend neunzehn	27. März 2019
+drei und dreißigstes	33.
+dem zwei tausendsten	dem 2000.
+achtzehn hundert sieben und sechzig	1867
+seit neunzehn achtzig	seit 1980
+im januar zweitausendneun	im Januar 2009
+fünf dollar fünfzig	5,50 Dollar
+sieben euro und fünfzehn cent	7,15 Euro
+drei pfund und zwölf pence	3,12 Pfund
+achtzig kilometer pro stunde	80 Kilometer pro Stunde
+# e-mail and web addresses spelled letter by letter
+a b c at g mail punkt com	abc@gmail.com
+l i n a at s c h u l e punkt e d u	lina@schule.edu
+t o m sieben acht at w e b punkt de	tom78@web.de
+h t t p s doppelpunkt slash slash w w w punkt b e i s p i e l punkt de	https://www.beispiel.de
+# a full stop shared with an abbreviation
+und so weiter.	usw.

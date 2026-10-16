@@ -1,0 +1,2 @@
+LANG = "fr"
+NAME = "French"

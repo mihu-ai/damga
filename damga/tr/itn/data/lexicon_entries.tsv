@@ -1,0 +1,58 @@
+# spoken form<TAB>written form   (Turkish lower-case spoken forms; '#' = comment)
+# spelled-out acronyms as ASR usually emits them
+ka de ve	KDV
+te ce	TC
+te ce kimlik	TC kimlik
+a be de	ABD
+a be	AB
+ce ha pe	CHP
+a ka pe	AKP
+pe te te	PTT
+te ha ye	THY
+es ge ka	SGK
+em er	MR
+ge pe es	GPS
+ye ka	YK
+ar ge	AR-GE
+pe de ef	PDF
+ha te te pe	HTTP
+ve ce	WC
+te ve	TV
+si vi	CV
+be te ka	BTK
+em es en	MSN
+ye te	YT
+em be	MB
+ge be	GB
+dabıl yu dabıl yu dabıl yu	www
+vesaire	vs.
+ve benzeri	vb.
+# more spelled-out acronyms (letter names as ASR emits them)
+ve saire	vs.
+ge es em	GSM
+es em es	SMS
+a te em	ATM
+vi ay pi	VIP
+ka ar	QR
+ka be	KB
+pe ce	PC
+ci pi yu	CPU
+ay ti	IT
+ey pi ay	API
+ka pe ay	KPI
+si i o	CEO
+se i o	CEO
+ye ka be	YKB
+te be em em	TBMM
+te ar te	TRT
+te ce de de	TCDD
+ka ye ka	KYK
+ha pe	HP
+el ce de	LCD
+ye ar el	URL
+ha te em el	HTML
+ce es ve	CSV
+pe ka	PK
+beş parasız	beş parasız
+yüz yüze	yüz yüze
+yüz göz	yüz göz

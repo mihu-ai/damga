@@ -1,0 +1,801 @@
+# Damga ITN golden set — spoken<TAB>written. Reviewed by hand. '#' = comment.
+# --- cardinal
+yirmi beş bin altı yüz	25.600
+yirmi beş bin	25.000
+yüz yirmi beş	125
+sıfır	0
+bin dokuz yüz doksan	1.990
+eksi on iki	-12
+toplam yirmi beş bin altı yüz adet var	toplam 25.600 adet var
+bir şey söyleyeceğim	bir şey söyleyeceğim
+onun evi bizim evin yanında	onun evi bizim evin yanında
+bir milyon iki yüz elli bin	1.250.000
+# --- ordinal
+üçüncü	3.
+yirmi beşinci	25.
+birinci sınıf	1. sınıf
+yüzüncü yıl	100. yıl
+# --- decimal
+üç virgül on dört	3,14
+sıfır virgül sıfır beş	0,05
+iki buçuk	2,5
+eksi iki virgül beş	-2,5
+bin iki yüz virgül beş	1.200,5
+# --- money
+yüz elli türk lirası	150 TL
+yüz elli lira	150 TL
+iki lira elli kuruş	2,50 TL
+elli kuruş	0,50 TL
+iki buçuk lira	2,50 TL
+on iki virgül beş euro	12,5 €
+yüz dolar	100 $
+iki bin beş yüz lira kırk kuruş	2.500,40 TL
+fiyatı bir milyon iki yüz elli bin lira	fiyatı 1.250.000 TL
+# --- percent
+yüzde yirmi beş	%25
+yüzde on iki virgül beş	%12,5
+yüzde yüz	%100
+indirim yüzde on	indirim %10
+binde beş	‰5
+# --- measure
+yirmi beş kilometre	25 km
+bir buçuk litre	1,5 lt
+doksan bin kilometre	90.000 km
+otuz derece	30°
+yüz metrekare	100 m²
+# --- time
+saat dokuz otuz	saat 09:30
+saat on dört kırk beş	saat 14:45
+saat dokuz buçuk	saat 09:30
+dokuzu çeyrek geçe	09:15
+dokuza çeyrek kala	08:45
+on ikiyi on geçe	12:10
+beşe beş kala	04:55
+saat dokuz	saat 9
+# --- date
+on beş ekim iki bin yirmi altı	15 Ekim 2026
+on beş ekim	15 Ekim
+ekim iki bin yirmi altı	Ekim 2026
+iki bin yirmi altı yılında	2026 yılında
+on beş ekimde görüşürüz	15 Ekim'de görüşürüz
+bir ocak iki bin yirmi beş	1 Ocak 2025
+# --- telephone
+sıfır beş otuz iki yüz yirmi üç kırk beş altmış yedi	0532 123 45 67
+telefon numaram sıfır beş otuz iki yüz yirmi üç kırk beş altmış yedi	telefon numaram 0532 123 45 67
+sıfır beş üç iki bir iki üç dört beş altı yedi	0532 123 45 67
+artı doksan beş yüz otuz iki yüz yirmi üç kırk beş altmış yedi	+90 532 123 45 67
+sıfır iki yüz on iki üç yüz kırk beş altmış yedi seksen dokuz	0212 345 67 89
+beş yüz otuz iki yüz yirmi üç kırk beş altmış yedi	0532 123 45 67
+sıfır beş otuz iki yüz yirmi üç kırk beş	0 5 32 123 45
+on beş yirmi beş, seksen beş doksan beş, 75.85	15 25, 85 95, 75.85
+beş yüz otuz iki, yüz yirmi üç, kırk beş altmış yedi	0532 123 45 67
+# --- iban
+te re doksan altı sıfır sıfır sıfır altı iki bin sıfır sıfır sıfır sıfır sıfır sıfır sıfır sıfır sıfır sıfır sıfır sıfır sıfır sıfır	TR96 0006 2000 0000 0000 0000 00
+# --- plate
+otuz dört a b c sekiz yüz kırk iki	34 ABC 842
+otuz dört adana bolu ceyhan sekiz yüz kırk iki	34 ABC 842
+plakam altı fe he yedi yüz on üç	plakam 06 FH 713
+on ve yirmi	10 ve 20
+# --- email / web
+derya nokta öztürk et gmail nokta com	derya.ozturk@gmail.com
+gizem alt çizgi kurt yirmi dokuz et icloud nokta com	gizem_kurt29@icloud.com
+e-posta adresim derya nokta öztürk et gmail nokta com	e-posta adresim derya.ozturk@gmail.com
+www nokta örnek tur nokta com	www.ornektur.com
+örnek tur nokta com nokta tr	ornektur.com.tr
+ayşe tire yılmaz et sirket nokta com nokta tr	ayse-yilmaz@sirket.com.tr
+# --- whitelist
+ka de ve dahil	KDV dahil
+# --- punctuation / casing preserved
+Toplam: yirmi beş bin altı yüz adet, tamam mı?	Toplam: 25.600 adet, tamam mı?
+saat dokuz otuzda görüşürüz	saat 09:30'da görüşürüz
+saat on dört kırk beşte başlıyor	saat 14:45'te başlıyor
+saat dokuz buçukta	saat 09:30'ta
+derya et, gymil dat com	derya@gmail.com
+derya et gmail dot com	derya@gmail.com
+ayşe nokta kaya at hotmail dot com	ayse.kaya@hotmail.com
+# --- brands
+sunucular aws üzerinde çalışıyor	sunucular AWS üzerinde çalışıyor
+vatsap üzerinden yazın	WhatsApp üzerinden yazın
+mail adresim derya et gmail nokta com, gmail kullanıyorum	mail adresim derya@gmail.com, Gmail kullanıyorum
+ödemeyi peypal ile yaptım	ödemeyi PayPal ile yaptım
+ets tur ile rezervasyon yaptık	ETS Tur ile rezervasyon yaptık
+mercedesiniz var mı	Mercedes'iniz var mı
+volvoda indirim var	Volvo'da indirim var
+şevralet var mı sizde	Chevrolet var mı sizde
+derya et avs noktacom	derya@aws.com
+derya evet mehu noktacom	derya@mihu.com
+evet mehu nokta com doğru	evet mihu.com doğru
+# --- address
+nusretiye karakolu sokağı no bir daire yedi	nusretiye karakolu sokağı No: 1 Daire: 7
+atatürk caddesi numara on iki kat üç daire beş	atatürk caddesi No: 12 Kat: 3 Daire: 5
+no1 daireydi	No: 1 Daire: 7
+kat iki daire dört	Kat: 2 Daire: 4
+bu daire çok güzel	bu daire çok güzel
+numara kaç	numara kaç
+e-postanız burak nokta koçet örnek banka nokta kom nokta tire doğru mu	e-postanız burak.koc@ornekbanka.com.tr doğru mu
+# --- spelling (kodlama)
+diyarbakırın de si edirnenin e si rizenin re si yozgatın ye si adananın a sı	Derya
+adım diyarbakır'ın d'si edirne'nin e'si rize'nin r'si yozgat'ın y'si adana'nın a'sı	adım Derya
+soyadım kars'ın ke si adana'nın a sı yozgat'ın ye si adana'nın a sı	soyadım Kaya
+ahmetin a sı leventin le si	Al
+izmirin i si	izmirin i si
+amasya nın ası lefkoşanın lesi i zmir in ise	Ali
+soyadım adana nın ası lüleburgaz ın lesi i stanbul un ise	soyadım Ali
+erzurum un esi lefkoşanın lesi i zmir in isi fatsa nın fesi	Elif
+# --- written/mixed recognizer output
+tutar 99 lira kırk kuruş	tutar 99,40 TL
+toplam 3750 lira ödeme yapıldı	toplam 3.750 TL ödeme yapıldı
+tutar üç bin yedi yüz elli lira, yirmi beş kuruş	tutar 3.750,25 TL
+toplantı saat 13.30	toplantı saat 13:30
+toplantı saat 8:30	toplantı saat 08:30
+toplantı saat 15 buçuk	toplantı saat 15:30
+ödemeyi netflix'le yaptım	ödemeyi Netflix'le yaptım
+ödemeyi trendyoluyla yaptım	ödemeyi Trendyol'uyla yaptım
+youtube'a hesabım açılmıyor	YouTube'a hesabım açılmıyor
+teslimat adresi bağdat caddesi, no 40 bir kat altı daire, 35	teslimat adresi bağdat caddesi, No: 41 Kat: 6 Daire: 35
+soyadım kocaeli'nin k'esi osmaniye nin osu çanakkale'nin çesi	soyadım Koç
+soyadım adana'nın ağası lüleburgaz'ın l'si istanbul un isi	soyadım Ali
+sipariş numarası 123456 ve 40 adet	sipariş numarası 123456 ve 40 adet
+kırk üç U beş bin iki yüz plakalı araç	43 U 5200 plakalı araç
+servise altmış dokuz EV sekiz bin dört yüz altmış dört plakalı aracı bıraktım	servise 69 EV 8464 plakalı aracı bıraktım
+yirmi dokuz G HK dört bin elli bir plakalı	29 GHK 4051 plakalı
+yetmiş üç, kars, beş bin yüz doksan bir plakalı	73 K 5191 plakalı
+EV sahibi misiniz	EV sahibi misiniz
+# spelling must not fire on ordinary possessives
+ankara'nın valisi istanbul'un belediyesi geldi	ankara'nın valisi istanbul'un belediyesi geldi
+ali'nin kedisi ayşe'nin köpeği	ali'nin kedisi ayşe'nin köpeği
+teslimat adresi atatürk caddesi numara otuz bir kat üç daire beş	teslimat adresi atatürk caddesi No: 31 Kat: 3 Daire: 5
+konya'nın ke, aydın'ın a	Ka
+adana'nın a'sı yumuşak ge'si	Ağ
+âşık'ın a'sı izmir'in i'si	Ai
+adım ağrı'nın a'sı yumuşak ge'si ankara'nın a'sı	adım Ağa
+çanakkale'nin çe'si ödemiş'in ö'sü şırnak'ın şe'si ünye'nin ü'sü ığdır'ın ı'sı	Çöşüı
+# casing of untouched words is preserved; converted spans use the grammar's form
+Sunucular Netflix üzerinde çalışıyor.	Sunucular Netflix üzerinde çalışıyor.
+Telefon numaram sıfır beş otuz iki yüz yirmi üç kırk beş altmış yedi.	Telefon numaram 0532 123 45 67.
+Eski kulüp başkanı Ahmet Yılmaz, antrenör Selin Demir ve kaptan Mehmet Kaya sırasıyla dördüncü, beşinci ve altıncı oldular.	Eski kulüp başkanı Ahmet Yılmaz, antrenör Selin Demir ve kaptan Mehmet Kaya sırasıyla 4., 5. ve 6. oldular.
+ben dışarıdaydım o yüzden ne söylediğini tam olarak anlayamadım	ben dışarıdaydım o yüzden ne söylediğini tam olarak anlayamadım
+kira sözleşmesini ve aidat ödemelerini değiştirme hakkı da yoktu	kira sözleşmesini ve aidat ödemelerini değiştirme hakkı da yoktu
+Mercedes'iniz hazır, Çevral et gmail nokta com	Mercedes'iniz hazır, cevral@gmail.com
+Kariyerine "Gezginler.com" alan adıyla başlamış	Kariyerine "Gezginler.com" alan adıyla başlamış
+sitemiz garaj on bir nokta com	sitemiz garajonbir.com
+Kütüphane binası ise Kadıköy'e taşınmıştır.	Kütüphane binası ise Kadıköy'e taşınmıştır.
+Burada V borunun hacmi, h su seviyesi	Burada V borunun hacmi, h su seviyesi
+Adresim Mimar Sinan Caddesi nokta yüz altmış sekiz	Adresim Mimar Sinan Caddesi No: 168
+Zafer Mahallesi nokta bir kat on bir daire otuz altı Beşiktaş İstanbul.	Zafer Mahallesi No: 1 Kat: 11 Daire: 36 Beşiktaş İstanbul.
+Bağdat Caddesi na yüz otuz dokuz kat on üç daire otuz bir	Bağdat Caddesi No: 139 Kat: 13 Daire: 31
+mailim derya nokta yılmaz et gmail nokta com	mailim derya.yilmaz@gmail.com
+# a case suffix glued to the last number word is kept after an apostrophe
+on beş ekim iki bin yirmi altıda teslim edilecek	15 Ekim 2026'da teslim edilecek
+ekim iki bin yirmi altıda	Ekim 2026'da
+iki bin yirmi beşe kadar	2025'e kadar
+bin dokuz yüz seksen beşte doğdum	1985'te doğdum
+yirmi altıda görüşürüz	26'da görüşürüz
+yüz elliye çıktı	150'ye çıktı
+otuz dördü aldım	34'ü aldım
+yirmi altıdaki ev	26'daki ev
+eksi on beşe düştü	-15'e düştü
+yüzde on beşe çıktı	%15'e çıktı
+saat ikide	saat 2'de
+saat on beş	saat 15
+saat on beşte	saat 15'te
+saat yirmi bir	saat 21
+saat on dokuz	saat 19
+saat dokuz beş	saat 09:05
+saat on beş kırk	saat 15:40
+# pronouns and ordinary words that look like a suffixed number stay as they are
+ona söyledim	ona söyledim
+onu aldım	onu aldım
+bu yüzden geldi	bu yüzden geldi
+biri geldi	biri geldi
+birden durdu	birden durdu
+masanın altında	masanın altında
+altının fiyatı	altının fiyatı
+sıfırdan başla	sıfırdan başla
+üçte bir	üçte bir
+saat üçte bir toplantı	saat 3'te bir toplantı
+saat ikide bir toplantı	saat 2'de bir toplantı
+onda biri geldi	onda biri geldi
+koltuğun yarısı	koltuğun yarısı
+ikide bir	ikide bir
+# the mobile layout 3-3-2-2 (10 digits, starts with 5) is a phone number even when the recognizer puts commas at the pauses
+beş yüz kırk üç, beş yüz elli, altmış altı, yetmiş yedi	0543 550 66 77
+beş yüz kırk üç beş yüz elli altmış altı yetmiş yedi	0543 550 66 77
+Numaram beş yüz kırk üç, beş yüz elli, altmış altı, yetmiş yedi.	Numaram 0543 550 66 77.
+beş yüz elli beş, yüz on bir, yirmi iki, otuz üç	0555 111 22 33
+sıfır beş yüz kırk üç, beş yüz elli, altmış altı, yetmiş yedi	0543 550 66 77
+# more than one round group, a non-5 start or a unit word: a list of numbers, not a phone
+beş yüz, üç yüz, kırk, elli	500, 300, 40, 50
+dört yüz kırk üç, beş yüz elli, altmış altı, yetmiş yedi	443, 550, 66, 77
+fiyatlar beş yüz kırk üç, beş yüz elli, altmış altı ve yetmiş yedi lira	fiyatlar 543, 550, 66 ve 77 TL
+beş yüz kırk üç lira, beş yüz elli lira	543 TL, 550 TL
+# --- additional coverage (2026-10): wider number/unit/time/date/money range, new brand + mail-domain variants
+# --- cardinal
+on bir	11
+yüz bir	101
+bin bir	1.001
+iki bin	2.000
+üç yüz kırk beş bin altı yüz yetmiş sekiz	345.678
+bir milyar	1.000.000.000
+iki milyon üç yüz bin	2.300.000
+bin yüz	1.100
+dokuz yüz doksan dokuz	999
+on bin	10.000
+yüz bin	100.000
+elli	50
+yetmiş dokuz	79
+seksen üç adet	83 adet
+bin beş yüz kişi geldi	1.500 kişi geldi
+iki yüz kişilik salon	200 kişilik salon
+beş kişi	5 kişi
+üç gün sonra	3 gün sonra
+on yıl önce	10 yıl önce
+yarım saat	yarım saat
+sekiz yüz	800
+yüz yirmi	120
+yüz yirmi iki	122
+# --- ordinal
+ikinci	2.
+dördüncü	4.
+onuncu	10.
+on birinci	11.
+yirminci	20.
+otuzuncu gün	30. gün
+kırk beşinci madde	45. madde
+ellinci yıl dönümü	50. yıl dönümü
+yüz yirmi beşinci	125.
+bin dokuz yüzüncü	1900.
+ikinci kat	2. kat
+birinci sınıf öğrencisi	1. sınıf öğrencisi
+# --- decimal
+bir virgül beş	1,5
+on virgül yirmi beş	10,25
+sıfır virgül bir	0,1
+üç buçuk	3,5
+yüz virgül sıfır beş	100,05
+beş virgül yüz yirmi üç	5,123
+# --- money
+beş lira	5 TL
+on lira	10 TL
+yüz euro	100 €
+elli dolar	50 $
+iki yüz elli türk lirası	250 TL
+bin lira	1.000 TL
+yüz bin lira	100.000 TL
+beş yüz euro	500 €
+üç dolar elli sent	3,50 $
+bir lira	1 TL
+on beş bin lira	15.000 TL
+yirmi beş kuruş	0,25 TL
+bir euro	1 €
+yüz sterlin	100 £
+fatura tutarı iki yüz kırk lira	fatura tutarı 240 TL
+aylık ücret on bin lira	aylık ücret 10.000 TL
+kırk dokuz lira doksan dokuz kuruş	49,99 TL
+yüz elli bin avro	150.000 €
+yüz tl	100 TL
+elli dolar kadar	50 $ kadar
+# --- percent
+yüzde beş	%5
+yüzde elli	%50
+yüzde bir	%1
+yüzde sıfır virgül beş	%0,5
+yüzde yetmiş beş	%75
+yüzde yirmi indirim	%20 indirim
+yüzde doksan dokuz	%99
+binde iki	‰2
+# --- measure
+on kilometre	10 km
+beş kilo	5 kg
+iki kilogram	2 kg
+üç yüz gram	300 g
+yüz mililitre	100 ml
+elli santimetre	50 cm
+bir metre	1 m
+iki metre yirmi santimetre	2 m 20 cm
+beş litre	5 lt
+yirmi derece	20°
+eksi beş derece	-5°
+yüz kırk beş santimetre	145 cm
+otuz saniye	30 sn
+on dakika	10 dk
+iki saat	2 saat
+altı ay	6 ay
+iki yüz megabayt	200 MB
+beş gigabayt	5 GB
+bir terabayt	1 TB
+yüz elli beygir gücü	150 HP
+altmış kilometre hız	60 km hız
+iki bin metre	2.000 m
+# --- time
+saat sekiz	saat 8
+saat on iki	saat 12
+saat on bir otuz	saat 11:30
+saat yedi buçuk	saat 07:30
+saat on yedi on beş	saat 17:15
+saat on sekiz otuz	saat 18:30
+saat on altı kırk beş	saat 16:45
+saat üç buçukta	saat 03:30'ta
+saat on ikide	saat 12'de
+saat dokuzda	saat 9'da
+yediyi çeyrek geçe	07:15
+altıya yirmi kala	05:40
+saat on üç otuz	saat 13:30
+saat on dokuz kırk beş	saat 19:45
+# --- date
+yirmi üç nisan	23 Nisan
+yirmi dokuz ekim bin dokuz yüz yirmi üç	29 Ekim 1923
+otuz ağustos	30 Ağustos
+bir mayıs	1 Mayıs
+yirmi mart iki bin yirmi yedi	20 Mart 2027
+on dört şubat	14 Şubat
+beş haziran iki bin yirmi altı	5 Haziran 2026
+otuz bir aralık	31 Aralık
+yedi temmuz	7 Temmuz
+on eylül	10 Eylül
+on kasım	10 Kasım
+on beş kasımda	15 Kasım'da
+yirmi üç nisanda tatil	23 Nisan'da tatil
+on iki eylül iki bin yirmi dört	12 Eylül 2024
+# --- telephone
+sıfır beş yüz elli beş yüz on bir yirmi iki otuz üç	0555 111 22 33
+sıfır beş yüz kırk dört iki yüz altmış beş on üç yetmiş bir	0544 265 13 71
+sıfır dört yüz elli iki üç yüz altmış on bir yirmi bir	0452 360 11 21
+artı doksan beş yüz kırk dört iki yüz altmış beş on üç yetmiş bir	+90 544 265 13 71
+sıfır beş yüz yirmi bir yüz yirmi üç kırk beş altmış yedi	0521 123 45 67
+# --- plate
+otuz beş a b yüz yirmi üç	35 AB 123
+altı fe he yedi yüz on üç	06 FH 713
+# --- email / web
+ahmet nokta yılmaz et hotmail nokta com	ahmet.yilmaz@hotmail.com
+ali et yahoo nokta com	ali@yahoo.com
+mehmet alt çizgi demir et outlook nokta com	mehmet_demir@outlook.com
+zeynep et gmail nokta com	zeynep@gmail.com
+info et sirketim nokta com nokta tr	info@sirketim.com.tr
+destek et mihu nokta ai	destek@mihu.ai
+www nokta google nokta com	www.google.com
+fatma yüz yirmi üç et gmail nokta com	fatma123@gmail.com
+can nokta kaya et icloud nokta com	can.kaya@icloud.com
+# --- whitelist
+# --- brands
+trendyoldan sipariş verdim	Trendyol'dan sipariş verdim
+hepsiburadadan aldım	Hepsiburada'dan aldım
+turkcell hattı	Turkcell hattı
+vodafona geçtim	Vodafone'a geçtim
+instagramda paylaştım	Instagram'da paylaştım
+telegram grubu	Telegram grubu
+tvitır hesabı	Twitter hesabı
+linkedin profili	LinkedIn profili
+zoom toplantısı	Zoom toplantısı
+sleyk kanalı	Slack kanalı
+# --- untouched
+günaydın nasılsınız	günaydın nasılsınız
+bir şey değil	bir şey değil
+yüzüme baktı	yüzüme baktı
+binlerce insan	binlerce insan
+yüzlerce kişi	yüzlerce kişi
+onlarca yıl	onlarca yıl
+# --- landline / toll-free
+sıfır üç yüz on iki yüz yirmi üç kırk beş altmış yedi	0312 123 45 67
+sıfır sekiz yüz yüz yirmi üç kırk beş altmış yedi	0800 123 45 67
+sıfır sekiz sıfır sıfır yüz yirmi üç kırk beş altmış yedi	0800 123 45 67
+çağrı merkezi sıfır sekiz yüz yüz yirmi üç kırk beş altmış yedi	çağrı merkezi 0800 123 45 67
+otuz dört ke ke beş yüz	34 KK 500
+# --- brands (new variants)
+tvitırda paylaştım	Twitter'da paylaştım
+sleyk kanalına yazın	Slack kanalına yazın
+telgrama mesaj attım	Telegram'a mesaj attım
+tik tok videosu çektim	TikTok videosu çektim
+snepçetten gönderdim	Snapchat'ten gönderdim
+vhatsap grubuna ekleyin	WhatsApp grubuna ekleyin
+semsung telefon aldım	Samsung telefon aldım
+çat ci pi ti ile yazdım	ChatGPT ile yazdım
+git hab hesabım var	GitHub hesabım var
+linkdın profilim	LinkedIn profilim
+türknet ile bağlandım	TürkNet ile bağlandım
+disney plus aboneliği	Disney+ aboneliği
+dizni plas aboneliği	Disney+ aboneliği
+blutv izliyorum	BluTV izliyorum
+ay fon on beş	iPhone 15
+karfur market	Carrefour market
+kanva ile tasarladım	Canva ile tasarladım
+iyzıko ile ödeme yaptım	iyzico ile ödeme yaptım
+pey te er entegrasyonu	PayTR entegrasyonu
+bitaksi çağırdım	BiTaksi çağırdım
+# --- email domains (new variants)
+ali et hotmayl nokta com	ali@hotmail.com
+ali et hot meyl nokta com	ali@hotmail.com
+veli et avtluk nokta com	veli@outlook.com
+ayşe et yahuu nokta com	ayse@yahoo.com
+can et ay klod nokta com	can@icloud.com
+elif et proton meyl nokta com	elif@protonmail.com
+ali et jimeyl nokta com	ali@gmail.com
+ali et gimayl nokta com	ali@gmail.com
+selin et ci meil nokta com	selin@gmail.com
+kaan et mayned nokta com	kaan@mynet.com
+mail adresim ece nokta aydın et cemeyl nokta com	mail adresim ece.aydin@gmail.com
+# --- known gaps (xfail: they fail today; the strict marker flags them once fixed)
+# a digit-by-digit tail after 'sıfır sekiz yüz' is 0800 …, no digit is invented (fixed: telephone.py S-before-bare-yüz rule)
+sıfır sekiz yüz bir iki üç dört beş altı yedi	0800 123 45 67
+saat yirmi iki sıfır sıfır	saat 22:00
+sekize çeyrek var	07:45
+beş parasız kaldı	beş parasız kaldı
+otuz dört ka ka beş yüz	34 KK 500
+# --- additional coverage round 2 (call-centre sentences, suffixed money, ordinals, phones, mail, untouched text)
+# --- call-centre sentences
+randevumu yirmi üç nisan saat on dört otuza alabilir miyim	randevumu 23 Nisan saat 14:30'a alabilir miyim
+sipariş numaram yüz yirmi üç bin dört yüz elli altı	sipariş numaram 123.456
+faturam üç yüz kırk beş lira elli kuruş çıkmış	faturam 345,50 TL çıkmış
+abonelik ücretiniz aylık yüz doksan dokuz lira doksan dokuz kuruş	abonelik ücretiniz aylık 199,99 TL
+bana yüzde on beş indirim yapabilir misiniz	bana %15 indirim yapabilir misiniz
+iki yüz elli bin liralık kredi	250.000 liralık kredi
+beş bin dolarlık	5.000 dolarlık
+üç yıllık garanti	3 yıllık garanti
+yirmi dört ay taksit	24 ay taksit
+altı taksit yapın	6 taksit yapın
+onuncu sıradasınız	10. sıradasınız
+doksan dakika sürer	90 dk sürer
+kırk beş gün içinde	45 gün içinde
+yüz seksen derece	180°
+yirmi iki derece sıcaklık	22° sıcaklık
+yetmiş beş kilo	75 kg
+bir buçuk saat	1,5 saat
+iki yüz elli gram	250 g
+otuz iki inç ekran	32 inç ekran
+yüz yirmi sekiz gigabayt hafıza	128 GB hafıza
+beş yüz on iki megabayt	512 MB
+yüz bin kilometre	100.000 km
+altmış beygir	60 HP
+yirmi beş metrekare daire	25 m² daire
+iki yüz metre ileride	200 m ileride
+üç milyon beş yüz bin	3.500.000
+yüz yirmi üç milyon	123.000.000
+bin dokuz yüz doksan dokuz	1.999
+iki bin yirmi altı	2.026
+iki bin dokuz yüz elli	2.950
+# --- time
+saat sekiz buçuk	saat 08:30
+saat on dört buçuk	saat 14:30
+saat on iki otuz	saat 12:30
+saat on üç on beş	saat 13:15
+saat on yedi elli	saat 17:50
+saat yirmi üç kırk beş	saat 23:45
+saat on bir buçukta	saat 11:30'ta
+saat dört buçukta	saat 04:30'ta
+saat altıda	saat 6'da
+saat on ikiye	saat 12'ye
+saat on beşe doğru	saat 15'e doğru
+sabah dokuzda	sabah 9'da
+akşam yedide	akşam 7'de
+öğlen on ikide	öğlen 12'de
+gece yarısı	gece yarısı
+beşi çeyrek geçe	05:15
+yediyi yirmi geçe	07:20
+dokuza on kala	08:50
+on bire yirmi beş kala	10:35
+# --- date
+bir ocak	1 Ocak
+iki şubat	2 Şubat
+üç mart	3 Mart
+dört nisan	4 Nisan
+beş mayıs	5 Mayıs
+altı haziran	6 Haziran
+yedi temmuz iki bin yirmi altı	7 Temmuz 2026
+sekiz ağustos	8 Ağustos
+dokuz eylül	9 Eylül
+on ekim	10 Ekim
+on bir kasım iki bin yirmi beş	11 Kasım 2025
+on iki aralık	12 Aralık
+yirmi bir mart	21 Mart
+yirmi iki nisan	22 Nisan
+yirmi beş mayıs iki bin yirmi yedi	25 Mayıs 2027
+otuz bir ocak iki bin yirmi sekiz	31 Ocak 2028
+mart ayının on beşi	mart ayının 15'i
+nisanın yirmi üçü	nisanın 23'ü
+ocak iki bin yirmi yedi	Ocak 2027
+iki bin yirmi sekiz yılında	2028 yılında
+bin dokuz yüz kırk beşte	1945'te
+# --- money suffixes
+yüz lirayı verdim	100 lirayı verdim
+elli liraya aldım	50 liraya aldım
+bin liradan fazla	1.000 liradan fazla
+beş yüz euroya	500 euroya
+on dolardan	10 dolardan
+yüz yirmi liralık	120 liralık
+iki bin liraya satıyorum	2.000 liraya satıyorum
+bir milyon liralık	1.000.000 liralık
+# --- ordinal suffix/context
+birinci derece	1. derece
+ikinci el araç	2. el araç
+üçüncü şahıs	3. şahıs
+dördüncü çeyrek	4. çeyrek
+yirminci yüzyıl	20. yüzyıl
+on dokuzuncu asır	19. asır
+yüzüncü kez	100. kez
+ikinci kez	2. kez
+birincisi	birincisi
+# --- percent / ratios
+yüzde otuz üç	%33
+yüzde on dört virgül beş	%14,5
+yüzde yüz kesin	%100 kesin
+yüzde seksen	%80
+yüzde on	%10
+# --- phone variants
+sıfır beş yüz otuz bir yüz yirmi iki otuz dört elli altı	0531 122 34 56
+sıfır beş yüz kırk yedi yüz seksen dokuz on iki otuz dört	0547 189 12 34
+sıfır beş yüz altmış beş dört yüz elli altı yetmiş sekiz doksan	0565 456 78 90
+beş yüz otuz bir yüz yirmi iki otuz dört elli altı	0531 122 34 56
+sıfır iki yüz on altı üç yüz kırk beş altmış yedi seksen dokuz	0216 345 67 89
+sıfır dört yüz on altı yüz yirmi üç kırk beş altmış yedi	0416 123 45 67
+sıfır beş yüz yirmi iki yüz yirmi iki yirmi iki yirmi iki	0522 122 22 22
+# --- email variants
+ahmet alt çizgi yılmaz et gmail nokta com	ahmet_yilmaz@gmail.com
+ayşe nokta demir nokta kaya et hotmail nokta com	ayse.demir.kaya@hotmail.com
+merve tire kaya et outlook nokta com	merve-kaya@outlook.com
+iletişim et mihu nokta ai	iletisim@mihu.ai
+satış et şirketim nokta com nokta tr	satis@sirketim.com.tr
+destek et ornek nokta net	destek@ornek.net
+ceren yüz et gmail nokta com	ceren100@gmail.com
+mehmet iki bin et yahoo nokta com	mehmet2000@yahoo.com
+www nokta mihu nokta ai	www.mihu.ai
+mihu nokta ai	mihu.ai
+# --- spelling
+adım ankaranın a sı lüleburgazın le si i zmirin i si	adım Ali
+soyadım yozgatın ye si ankaranın a sı	soyadım Ya
+# --- whitelist / abbreviations
+# --- untouched ordinary Turkish
+bugün hava çok güzel	bugün hava çok güzel
+yarın görüşürüz	yarın görüşürüz
+teşekkür ederim iyi günler	teşekkür ederim iyi günler
+lütfen bekleyin	lütfen bekleyin
+nasıl yardımcı olabilirim	nasıl yardımcı olabilirim
+müşteri temsilcisine bağlıyorum	müşteri temsilcisine bağlıyorum
+bir dakika lütfen	1 dk lütfen
+bir kere daha söyler misiniz	bir kere daha söyler misiniz
+birkaç gün sonra	birkaç gün sonra
+yüzlerce lira	yüzlerce lira
+binlerce kişi	binlerce kişi
+ikiye bölün	2'ye bölün
+üçe katladı	3'e katladı
+dörde böldü	4'e böldü
+yarısı	yarısı
+yüzde yüz haklısınız	%100 haklısınız
+sıfır hata	0 hata
+bir tane	bir tane
+iki tane	2 tane
+# --- acronyms spelled by letter name (whitelist)
+ge es em hattı	GSM hattı
+es em es geldi	SMS geldi
+a te em önünde	ATM önünde
+vi ay pi müşteri	VIP müşteri
+ka ar kodu okutun	QR kodu okutun
+pe ce açılmıyor	PC açılmıyor
+ci pi yu kullanımı	CPU kullanımı
+ey pi ay anahtarı	API anahtarı
+ka pe ay raporu	KPI raporu
+ye ka be	YKB
+ka ye ka yurdu	KYK yurdu
+te ce de de bileti	TCDD bileti
+ve saire	vs.
+pe ka numarası	PK numarası
+# --- ASCII-folded recognizer output (diacritics dropped): repaired before the grammars run
+yuz elli lira	150 TL
+uc yuz kirk bes	345
+dort bin bes yuz	4.500
+sifir bes yuz otuz iki yuz yirmi uc kirk bes altmis yedi	0532 123 45 67
+yirmi bes bin alti yuz	25.600
+dokuz yuz doksan dokuz	999
+yuzde on bes	%15
+on bes ekim iki bin yirmi alti	15 Ekim 2026
+altmis yedi	67
+yetmis	70
+seksen bes	85
+bir milyon bes yuz bin	1.500.000
+saat dokuz otuz	saat 09:30
+yetmis iki	72
+altmiş	60
+Yuz Elli Lira	150 TL
+dort yuz	400
+yuz elli turk lirasi	150 TL
+bin dokuz yuz kirk bes	1.945
+uc yuz kisi	300 kisi
+on iki mart iki bin yirmi alti	12 Mart 2026
+otuz agustos	30 Ağustos
+yirmi dokuz ekim	29 Ekim
+kirk bir	41
+elli kurus	0,50 TL
+bes buçuk lira	5,50 TL
+# --- glued number words (onbeş, yirmibeş, …)
+yirmibeş	25
+onbeş	15
+kırkbeş	45
+yüzelli	150
+ikiyüz	200
+üçyüzkırkbeş	345
+altmışyedi	67
+yirmibin	20.000
+onbeş ekim	15 Ekim
+yüzelli lira	150 TL
+oniki	12
+onüç	13
+ondört	14
+onsekiz	18
+yirmiüç	23
+otuzbir	31
+bindokuzyüz	1.900
+saat onbeş otuz	saat 15:30
+yüzde yirmibeş	%25
+onbeşinci	15.
+ikibinyirmialtı	2.026
+yirmibeşbin altıyüz	25.600
+beşyüz lira	500 TL
+# --- ordinary words made of number-word pieces stay untouched
+uç noktası	uç noktası
+yüzük taktı	yüzük taktı
+yüzme havuzu	yüzme havuzu
+bine bindi	bine bindi
+onlar geldi	onlar geldi
+dörtnala koştu	dörtnala koştu
+binbir gece masalları	binbir gece masalları
+yüzbaşı geldi	yüzbaşı geldi
+onbaşı geldi	onbaşı geldi
+üçgen çizdi	üçgen çizdi
+kırkayak	kırkayak
+beşik	beşik
+birlikte gittik	birlikte gittik
+ikizler	ikizler
+# --- e-mail separator / TLD pronunciation variants
+ali alt tire veli et gmail nokta com	ali_veli@gmail.com
+ali altı tire veli et gmail nokta com	ali_veli@gmail.com
+ali et gmail nokta ko	ali@gmail.com
+ali et gmail nokta cım	ali@gmail.com
+ali et gmail nokta kem	ali@gmail.com
+ali nokta veli et hotmail nokta kom	ali.veli@hotmail.com
+ali nokta veli at gimail dot com	ali.veli@gmail.com
+ali nokta veli et jimeyl nokta com	ali.veli@gmail.com
+ali et gmail noktacom	ali@gmail.com
+ali tire veli et gmail nokta com	ali-veli@gmail.com
+# --- known gaps (xfail)
+altıya çeyrek var	05:45
+saat on dokuz sıfır beş	saat 19:05
+bilgi et firma nokta org	bilgi@firma.org
+https iki nokta bölü bölü mihu nokta ai	https://mihu.ai
+beşte biri	beşte biri
+yüz yüze geldik	yüz yüze geldik
+a be ce	ABC
+sifirdan basla	sıfırdan basla
+bese kadar bekle	5'e kadar bekle
+dortten sonra	4'ten sonra
+beste yaptı	beste yaptı
+besi uşak	besi uşak
+# --- phone numbers: one non-zero digit word never splits off the 'yüz' that belongs to it (no invented 1)
+sıfır beş yüz beş iki dokuz altı sekiz altı bir	0500 529 68 61
+sıfır beş yüz yirmi dokuz altı dokuz dört sıfır yedi üç	0520 969 40 73
+sıfır beş yüz on iki beş sıfır üç sıfır iki dört	0510 250 30 24
+sıfır beş yüz kırk üç sıfır iki dokuz sekiz üç dokuz	0540 302 98 39
+sıfır sekiz yüz bir iki üç dört beş altı yedi	0800 123 45 67
+# an anchored 11-digit reading wins over '0' + unanchored mobile (no doubled leading 0)
+sıfır beş yüz otuz yedi sekiz yüz elli sekiz yetmiş doksan beş	0537 858 70 95
+sıfır beş yüz altmış dokuz dokuz yüz otuz beş altmış kırk dört	0569 935 60 44
+sıfır beş yüz kırk beş dokuz yüz bir doksan doksan yedi	0545 901 90 97
+sıfır beş yüz yirmi iki üç yüz kırk altı elli on dört	0522 346 50 14
+# --- written number + unit abbreviation is not a plate (70 kg 180 cm, 12 km 300 m)
+70 kg 180 cm	70 kg 180 cm
+boyum 180 cm kilom 70 kg 80 cm	boyum 180 cm kilom 70 kg 80 cm
+yol 12 km 300 metre	yol 12 km 300 m
+45 mb 120 kb	45 mb 120 kb
+70 m 1	70 m 1
+yetmiş metre bir üç	70 m bir 3
+34 AB 123	34 AB 123
+kırk üç U beş bin iki yüz plakalı araç	43 U 5200 plakalı araç
+ka pe ka	KPK
+her gün a be ce de	her gün ABC de
+he he he	he he he
+takip kodu be ce fe	takip kodu BCF
+# --- time: zero minutes, leading-zero minutes, 'var' (quarter/minutes to), found by time round-trip fuzzing
+saat sıfır on beş	saat 00:15
+saat dokuz sıfır sıfır	saat 09:00
+saat on sıfır beş	saat 10:05
+saat yirmi sıfır sıfır	saat 20:00
+saat on sekiz sıfır yedi	saat 18:07
+bire çeyrek var	00:45
+yediye on var	06:50
+dokuza yirmi beş var	08:35
+ona beş var	09:55
+on ikiye çeyrek var	11:45
+# --- https URLs
+https iki nokta bölü bölü www nokta mihu nokta ai	https://www.mihu.ai
+http iki nokta bölü bölü mihu nokta com nokta tr	http://mihu.com.tr
+https iki nokta bölü bölü mihu nokta ai bölü fiyat	https://mihu.ai/fiyat
+# --- e-mail: 'bilgi' as the local part
+destek et mihu nokta ai	destek@mihu.ai
+mail adresi bilgi et sirket nokta com	mail adresi bilgi@sirket.com
+# --- e-mail: spaced two-word domain label, capitalized TLD, role word before a comma, giymiel
+ali et örnek mağaza.com	ali@ornekmagaza.com
+ali et gmail nokta COM	ali@gmail.com
+Hayır, ali et giymiel nokta com	Hayır, ali@gmail.com
+ali et gmail.com merhaba dünya	ali@gmail.com merhaba dünya
+# --- decimals, inflections and decade words (2026-10)
+# a point decimal read out is written with the Turkish decimal comma; a scale word after a decimal stays a word
+bir nokta dokuz saat	1,9 saat
+on iki nokta üç milyon kişi	12,3 milyon kişi
+on iki virgül üç milyon kişi	12,3 milyon kişi
+iki buçuk milyon dolar	2,5 milyon $
+beş virgül beş milyona	5,5 milyona
+yüzde bir nokta iki	%1,2
+yüzde otuz yedi nokta üçünün	%37,3'ünün
+kırk iki nokta ikiden	42,2'den
+# every inflection of the last word after another number word
+kırk beşin karşısına	45'in karşısına
+toplamı yüz elliydi	toplamı 150'ydi
+ayın yirmi dokuzunda	ayın 29'unda
+üç yüz doksan ikili seviyeler	392'li seviyeler
+yüz on beşlere	115'lere
+seksen binlerden	80 binlerden
+# decade words: plural and -li alone
+yetmişler altmışlar	70'ler 60'lar
+doksanlı yıllar	90'lı yıllar
+# after yüzde every inflection, also on bir / on
+yüzde on altısı	%16'sı
+yüzde onu aşan	%10'u aşan
+yüzde birlik	%1'lik
+yüzde onluk	%10'luk
+yüzde yüzlere	%100'lere
+# years before plural year words; month names with an apostrophe
+bin dokuz yüz elli yılları	1950 yılları
+bir Mayıs'ta	1 Mayıs'ta
+# untouched: pronouns and words that are number forms
+onun için	onun için
+ikili ilişkiler	ikili ilişkiler
+birden fazla	birden fazla
+iki yüzde birini	200'de birini
+dört yüzde biri	400'de biri
+yüzde birlik artış	%1'lik artış
+yüzde yirmisi	%20'si
+yüzde birini	%1'ini
+yüzde birin üzerine	%1'in üzerine
+yüzde biri kadarlık	%1'i kadarlık
+beş yüzde birinden	500'de birinden
+ip adresi yüz doksan iki nokta yüz altmış sekiz nokta bir nokta bir	ip adresi 192.168.1.1
+sürüm üç nokta iki nokta bir	sürüm 3.2.1
+on nokta sıfır nokta sıfır nokta bir	10.0.0.1
+saat on yediyi çeyrek geçe orada olurum	saat 17:15 orada olurum
+yirmi bire çeyrek kala	20:45
+on yediye beş var	16:55
+yarımda geleceğim	12:30'da geleceğim
+saat yarımda buluşalım	saat 12:30'da buluşalım
+yarıma kadar bekle	12:30'a kadar bekle
+yarımdan sonra uğrarım	12:30'dan sonra uğrarım
+iş yarımda kaldı	iş yarımda kaldı
+yarım saat sonra	yarım saat sonra
+yarıma yakın arkadaşlar	yarıma yakın arkadaşlar
+# the recognizer dropped artı: 90 before a full mobile number is the country code
+doksan beş yüz otuz iki yüz yirmi üç kırk beş altmış yedi	+90 532 123 45 67
+doksan yaşında	90 yaşında
+doksan beş yüz otuz iki	95 132
+# --- spelling: letter + "yani" + example word (call-centre code reading)
+rezervasyon kodunuz K yani Kayseri, M yani Muş, T yani Tokat, dört, yedi, bir	rezervasyon kodunuz KMT471
+Rezervasyon kodunuz K, yani Kayseri me yani Muş t yani Tokat 4 7 bir.	Rezervasyon kodunuz KMT471.
+soyadınızı kodluyorum: Y yani Yozgat, I yani Isparta, L yani Lüleburgaz, M yani Muş, A yani Adana, Z yani Zonguldak	soyadınızı kodluyorum: YILMAZ
+Ye yani Yozgat I yani Isparta le yani lüleburgaz	YIL
+şasi numaranızın son beş hanesi V yani Van, T yani Tokat, üç, sıfır, dokuz	şasi numaranızın son 5 hanesi VT309
+a yani anladın mı	a yani anladın mı
+K yani Kayseri tamam	K yani Kayseri tamam
+# --- telephone with a case ending on the last group; car model names
+bize sıfır beş otuz iki altı yüz kırk beş on iki otuz dörtten ulaşabilirsiniz	bize 0532 645 12 34'ten ulaşabilirsiniz
+Bize sıfır beş otuz iki, altı yüz kırk beş, on iki, otuz dörtten ulaşabilirsiniz.	Bize 0532 645 12 34'ten ulaşabilirsiniz.
+sizi sıfır beş kırk üç üç yüz yirmi bir elli altı yetmiş sekizden arayacağız	sizi 0543 321 56 78'den arayacağız
+otuz dörtten fazla	34'ten fazla
+Hyundai i yirmi için balata ve disk değişimi öneriyoruz.	Hyundai i20 için balata ve disk değişimi öneriyoruz.
+audi a dört	Audi A4
+Soyadınızı kodluyorum, Ye yani Yozgat I yani Isparta le yani lüleburgaz m e yani muş a yani adana z yani zonguldak	Soyadınızı kodluyorum, YILMAZ
+# --- spelling with letter names (a be ce ... yumuşak ge)
+soyadım ye ı le me a ze	soyadım YILMAZ
+adım de e re ye a	adım DERYA
+soyadım de a yumuşak ge	soyadım DAĞ
+soyadım çe e le i ke	soyadım ÇELİK
+kodunuz ka me te dört yedi bir	kodunuz KMT471
+ye me ve içme	ye me ve içme
+a de ne ve	a de ne ve
+gel ye ye	gel ye ye
+bir de a ne e	bir de a ne e

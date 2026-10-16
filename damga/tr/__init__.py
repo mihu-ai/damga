@@ -1,0 +1,2 @@
+LANG = "tr"
+NAME = "Turkish"

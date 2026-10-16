@@ -1,0 +1,2 @@
+LANG = "ru"
+NAME = "Russian"

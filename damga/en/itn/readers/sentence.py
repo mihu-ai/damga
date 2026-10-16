@@ -1,0 +1,78 @@
+from __future__ import annotations
+
+import pynini
+from pynini.lib import pynutil
+
+from ....core.rules import Rule, drop_space, squeeze_space
+from ....tr.itn.readers.word import WordReader
+from ...punctuation import PunctuationReader
+from ..categories import ALL_CATEGORIES
+from .cardinal import CardinalReader, written_digits
+
+DEFAULT_WEIGHTS = {
+    "cardinal": 1.1, "ordinal": 1.1, "decimal": 1.05, "money": 1.0, "percent": 1.0, "time": 1.0, "date": 1.0,
+    "email_url": 1.0, "telephone": 0.9, "lexicon_entry": 1.0, "word": 100.0, "punctuation": 1.0,
+}
+
+
+class SentenceReader(Rule):
+    name = "sentence"
+    kind = "read"
+
+    def build(self, categories=ALL_CATEGORIES, variants: bool = False, custom_vocab=None, group: bool = True):
+        cats = set(categories)
+        w = DEFAULT_WEIGHTS
+        cardinal = CardinalReader(variants, group=group)
+        written = (cardinal.number @ written_digits(group)).optimize()
+        branches = []
+
+        def add(name: str, fst: pynini.Fst) -> None:
+            branches.append(pynutil.add_weight(fst, w[name]))
+
+        if "cardinal" in cats:
+            add("cardinal", cardinal.fst)
+        from .decimal import DecimalReader
+        decimal = DecimalReader(cardinal.number, variants)
+        if "decimal" in cats:
+            add("decimal", decimal.fst)
+        from .ordinal import OrdinalReader
+        ordinal = OrdinalReader(variants)
+        if "ordinal" in cats:
+            add("ordinal", ordinal.fst)
+        if "money" in cats:
+            from .money import MoneyReader
+            add("money", MoneyReader(cardinal.number, written, pynini.union(decimal.number, decimal.half), variants).fst)
+        if "percent" in cats:
+            from .money import PercentReader
+            add("percent", PercentReader(written, pynini.union(decimal.number, decimal.half), variants).fst)
+        if "time" in cats:
+            from .time import TimeReader
+            add("time", TimeReader(cardinal.number, variants).fst)
+        if "date" in cats:
+            from .date import DateReader
+            digit = pynini.union(*"0123456789")
+            year = pynini.union(cardinal.year, cardinal.number @ (pynini.union("1", "2") + digit + digit + digit))
+            add("date", DateReader(ordinal.number, year, variants).fst)
+        if "email_url" in cats:
+            from .email_url import EmailUrlReader
+            add("email_url", EmailUrlReader(variants).fst)
+        if "telephone" in cats:
+            from .telephone import TelephoneReader
+            add("telephone", TelephoneReader(variants).fst)
+        if "lexicon_entry" in cats or custom_vocab:
+            from .lexicon_entry import LexiconEntryReader
+            wl = LexiconEntryReader(variants, custom=custom_vocab, builtin="lexicon_entry" in cats)
+            if wl.built:
+                add("lexicon_entry", wl.fst)
+
+        word = pynutil.add_weight(WordReader(variants).fst, w["word"])
+        punct = pynutil.add_weight(PunctuationReader(variants).fst, w["punctuation"])
+        token = pynini.union(*branches, word).optimize()
+
+        def tpp(t: pynini.Fst) -> pynini.Fst:
+            return (pynini.closure(punct + pynutil.insert(" "), 0, 1) + t
+                    + pynini.closure(pynutil.insert(" ") + punct, 0, 2))
+
+        unit = tpp(token)
+        graph = drop_space.ques + unit + pynini.closure(squeeze_space + unit) + drop_space.ques
+        return graph.optimize()

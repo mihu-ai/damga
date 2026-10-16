@@ -1,0 +1,462 @@
+# Brand / product names: spoken form (as a Turkish recognizer emits it) → written form with official casing.
+# Multiple spoken variants per brand are fine. Inside an e-mail address the e-mail grammar wins, so "gmail"
+# stays lower-case there and becomes "Gmail" only as a free-standing word.
+# --- mail / cloud / tech
+gmail	Gmail
+cimil	Gmail
+gimeyl	Gmail
+ci meyl	Gmail
+google	Google
+gugıl	Google
+gugl	Google
+google cloud	Google Cloud
+google drive	Google Drive
+google maps	Google Maps
+google play	Google Play
+youtube	YouTube
+yutup	YouTube
+yutub	YouTube
+android	Android
+chrome	Chrome
+apple	Apple
+epıl	Apple
+iphone	iPhone
+ayfon	iPhone
+ipad	iPad
+aypet	iPad
+icloud	iCloud
+ayklaud	iCloud
+macbook	MacBook
+mekbuk	MacBook
+microsoft	Microsoft
+maykrosoft	Microsoft
+windows	Windows
+vindovs	Windows
+outlook	Outlook
+autluk	Outlook
+hotmail	Hotmail
+hotmeyl	Hotmail
+office	Office
+teams	Teams
+tims	Teams
+azure	Azure
+ejur	Azure
+ajur	Azure
+amazon	Amazon
+aws	AWS
+a ve es	AWS
+e dabıl yu es	AWS
+ey dabılyu es	AWS
+amazon web services	AWS
+amazon veb servis	AWS
+netflix	Netflix
+netfliks	Netflix
+spotify	Spotify
+spotifay	Spotify
+facebook	Facebook
+feysbuk	Facebook
+instagram	Instagram
+instagiram	Instagram
+whatsapp	WhatsApp
+vatsap	WhatsApp
+votsap	WhatsApp
+telegram	Telegram
+twitter	Twitter
+tivitır	Twitter
+linkedin	LinkedIn
+linktin	LinkedIn
+tiktok	TikTok
+zoom	Zoom
+zum	Zoom
+slack	Slack
+notion	Notion
+trello	Trello
+jira	Jira
+github	GitHub
+githab	GitHub
+chatgpt	ChatGPT
+çet ci pi ti	ChatGPT
+openai	OpenAI
+gemini	Gemini
+copilot	Copilot
+yahoo	Yahoo
+yandex	Yandex
+yandeks	Yandex
+protonmail	ProtonMail
+msn	MSN
+skype	Skype
+skayp	Skype
+paypal	PayPal
+peypal	PayPal
+visa	Visa
+mastercard	Mastercard
+mastırkart	Mastercard
+american express	American Express
+revolut	Revolut
+wise	Wise
+booking	Booking
+buking	Booking
+booking com	Booking.com
+airbnb	Airbnb
+erbienbi	Airbnb
+expedia	Expedia
+trivago	Trivago
+tripadvisor	TripAdvisor
+skyscanner	Skyscanner
+uber	Uber
+bolt	Bolt
+tesla	Tesla
+intel	Intel
+amd	AMD
+dell	Dell
+lenovo	Lenovo
+samsung	Samsung
+samsung galaxy	Samsung Galaxy
+xiaomi	Xiaomi
+şaomi	Xiaomi
+huawei	Huawei
+huavey	Huawei
+sony	Sony
+playstation	PlayStation
+pleysteyşın	PlayStation
+xbox	Xbox
+eksboks	Xbox
+nintendo	Nintendo
+steam	Steam
+bluetooth	Bluetooth
+blutut	Bluetooth
+wifi	Wi-Fi
+vayfay	Wi-Fi
+usb	USB
+yu es bi	USB
+hdmi	HDMI
+vpn	VPN
+vi pi en	VPN
+esim	eSIM
+qr kod	QR kod
+kü ar kod	QR kod
+pdf	PDF
+pe de ef	PDF
+excel	Excel
+eksel	Excel
+powerpoint	PowerPoint
+pavırpoint	PowerPoint
+sql	SQL
+python	Python
+paytın	Python
+javascript	JavaScript
+kubernetes	Kubernetes
+docker	Docker
+linux	Linux
+linuks	Linux
+macos	macOS
+ios	iOS
+ay o es	iOS
+firefox	Firefox
+shopify	Shopify
+salesforce	Salesforce
+hubspot	HubSpot
+sap	SAP
+oracle	Oracle
+orakıl	Oracle
+ibm	IBM
+ay bi em	IBM
+cisco	Cisco
+sisko	Cisco
+siemens	Siemens
+bosch	Bosch
+philips	Philips
+# --- Turkish companies / banks / telecom / retail / travel
+ets tur	ETS Tur
+e te es tur	ETS Tur
+etstur	ETS Tur
+jolly tur	Jolly Tur
+tatilbudur	Tatilbudur
+tatilsepeti	Tatilsepeti
+setur	Setur
+turkcell	Turkcell
+vodafone	Vodafone
+vodafon	Vodafone
+türk telekom	Türk Telekom
+superonline	Superonline
+garanti bbva	Garanti BBVA
+yapı kredi	Yapı Kredi
+iş bankası	İş Bankası
+akbank	Akbank
+ziraat bankası	Ziraat Bankası
+halkbank	Halkbank
+vakıfbank	VakıfBank
+qnb	QNB
+kü en bi	QNB
+finansbank	Finansbank
+denizbank	DenizBank
+teb	TEB
+te e be	TEB
+enpara	Enpara
+papara	Papara
+türk hava yolları	Türk Hava Yolları
+thy	THY
+te ha ye	THY
+pegasus	Pegasus
+ajet	AJet
+sunexpress	SunExpress
+migros	Migros
+bim	BİM
+a yüz bir	A101
+a bir sıfır bir	A101
+carrefoursa	CarrefourSA
+trendyol	Trendyol
+hepsiburada	Hepsiburada
+hepsi burada	Hepsiburada
+yemeksepeti	Yemeksepeti
+yemek sepeti	Yemeksepeti
+n on bir	n11
+arçelik	Arçelik
+beko	Beko
+vestel	Vestel
+koç holding	Koç Holding
+sabancı holding	Sabancı Holding
+eczacıbaşı	Eczacıbaşı
+anadolu sigorta	Anadolu Sigorta
+allianz	Allianz
+alyans	Allianz
+axa	AXA
+aksigorta	Aksigorta
+mapfre	Mapfre
+tofaş	Tofaş
+togg	Togg
+opet	Opet
+petrol ofisi	Petrol Ofisi
+shell	Shell
+şel	Shell
+bp	BP
+be pe	BP
+aygaz	Aygaz
+enerjisa	Enerjisa
+iski	İSKİ
+igdaş	İGDAŞ
+ptt	PTT
+pe te te	PTT
+aras kargo	Aras Kargo
+yurtiçi kargo	Yurtiçi Kargo
+mng kargo	MNG Kargo
+sürat kargo	Sürat Kargo
+hepsijet	Hepsijet
+dhl	DHL
+de ha le	DHL
+ups	UPS
+yu pi es	UPS
+fedex	FedEx
+fedeks	FedEx
+koçtaş	Koçtaş
+ikea	IKEA
+mediamarkt	MediaMarkt
+teknosa	Teknosa
+vatan bilgisayar	Vatan Bilgisayar
+lc waikiki	LC Waikiki
+el si vaykiki	LC Waikiki
+defacto	DeFacto
+koton	Koton
+boyner	Boyner
+beymen	Beymen
+zara	Zara
+decathlon	Decathlon
+dekatlon	Decathlon
+starbucks	Starbucks
+starbaks	Starbucks
+burger king	Burger King
+mcdonalds	McDonald's
+mekdonalds	McDonald's
+dominos	Domino's
+e devlet	e-Devlet
+sgk	SGK
+es ge ka	SGK
+tüvtürk	TÜVTÜRK
+mhrs	MHRS
+acıbadem	Acıbadem
+memorial	Memorial
+medical park	Medical Park
+medicana	Medicana
+medipol	Medipol
+liv hospital	Liv Hospital
+mihu	Mihu
+# --- cars
+mercedes	Mercedes
+bmw	BMW
+be me ve	BMW
+audi	Audi
+volkswagen	Volkswagen
+folksvagen	Volkswagen
+renault	Renault
+reno	Renault
+toyota	Toyota
+hyundai	Hyundai
+hunday	Hyundai
+fiat	Fiat
+opel	Opel
+peugeot	Peugeot
+pejo	Peugeot
+honda	Honda
+nissan	Nissan
+kia	Kia
+skoda	Skoda
+dacia	Dacia
+daçya	Dacia
+citroen	Citroën
+sitroen	Citroën
+seat	Seat
+volvo	Volvo
+porsche	Porsche
+porş	Porsche
+ford	Ford
+chevrolet	Chevrolet
+şevrole	Chevrolet
+# car models read letter + number (Hyundai i yirmi -> i20); only multi-word spoken forms, so a bare letter is never touched
+i yirmi	i20
+i otuz	i30
+i kırk	i40
+audi a üç	Audi A3
+audi a dört	Audi A4
+audi a altı	Audi A6
+mercedes ce yüz seksen	Mercedes C180
+mercedes ce iki yüz	Mercedes C200
+# --- hotels / tourism
+hilton	Hilton
+marriott	Marriott
+rixos	Rixos
+rıksos	Rixos
+titanic	Titanic
+sheraton	Sheraton
+radisson	Radisson
+swissotel	Swissôtel
+four seasons	Four Seasons
+ritz carlton	Ritz-Carlton
+divan	Divan
+dedeman	Dedeman
+voyage	Voyage
+maxx royal	Maxx Royal
+regnum	Regnum
+şevralet	Chevrolet
+çevralet	Chevrolet
+çevral et	Chevrolet
+şevral et	Chevrolet
+şevrolet	Chevrolet
+çevrolet	Chevrolet
+çevrole	Chevrolet
+avs	AWS
+# --- more ASR mis-hearings (social / productivity / dev / payments / retail)
+tvitır	Twitter
+tuvitır	Twitter
+twitır	Twitter
+tviter	Twitter
+sleyk	Slack
+slek	Slack
+telgram	Telegram
+telegıram	Telegram
+telegrem	Telegram
+tik tok	TikTok
+snepçet	Snapchat
+snapçet	Snapchat
+pinterest	Pinterest
+pinterist	Pinterest
+yuber	Uber
+master kart	Mastercard
+mastır kart	Mastercard
+vhatsap	WhatsApp
+votsapp	WhatsApp
+vatsapp	WhatsApp
+vatsab	WhatsApp
+semsung	Samsung
+samsang	Samsung
+huvay	Huawei
+şiaomi	Xiaomi
+ksiaomi	Xiaomi
+lenova	Lenovo
+intıl	Intel
+ey em di	AMD
+open ey ay	OpenAI
+open ey yay	OpenAI
+çat ci pi ti	ChatGPT
+çet ci pe te	ChatGPT
+çet gpt	ChatGPT
+çat gpt	ChatGPT
+çatgpt	ChatGPT
+git hab	GitHub
+gıthab	GitHub
+gıt hab	GitHub
+linkdın	LinkedIn
+linkdin	LinkedIn
+linkıdın	LinkedIn
+linkedın	LinkedIn
+linked in	LinkedIn
+te te net	TTNET
+türknet	TürkNet
+turknet	TürkNet
+türk net	TürkNet
+tosla	Tosla
+ininal	Ininal
+kuveyt türk	Kuveyt Türk
+albaraka	Albaraka
+çiçeksepeti	ÇiçekSepeti
+gittigidiyor	GittiGidiyor
+karfur	Carrefour
+kerfur	Carrefour
+karfursa	CarrefourSA
+karfur sa	CarrefourSA
+obilet	Obilet
+nefliks	Netflix
+netfliş	Netflix
+spotifi	Spotify
+disney plus	Disney+
+disney plas	Disney+
+dizni plas	Disney+
+exxen	Exxen
+ekzen	Exxen
+blutv	BluTV
+blu tv	BluTV
+youtup	YouTube
+yu tub	YouTube
+ay fon	iPhone
+ay pad	iPad
+ayped	iPad
+aypat	iPad
+maykırosoft	Microsoft
+vindous	Windows
+vindos	Windows
+ekzel	Excel
+pavır point	PowerPoint
+pavırpoynt	PowerPoint
+pauer point	PowerPoint
+paverpoynt	PowerPoint
+outlok	Outlook
+adobi	Adobe
+fotoşop	Photoshop
+photoshop	Photoshop
+figma	Figma
+canva	Canva
+kanva	Canva
+kanvı	Canva
+orakl	Oracle
+orekıl	Oracle
+sales force	Salesforce
+seylsfors	Salesforce
+seyls fors	Salesforce
+hab spot	HubSpot
+hap spot	HubSpot
+zendesk	Zendesk
+zendeks	Zendesk
+twilio	Twilio
+tvilyo	Twilio
+tuvilyo	Twilio
+stripe	Stripe
+strayp	Stripe
+iyzıko	iyzico
+ayzıko	iyzico
+paytr	PayTR
+pey te er	PayTR
+pey ti ar	PayTR
+bitaksi	BiTaksi
+bi taksi	BiTaksi
+migroz	Migros
+ipekyol	İpekyol
+ipek yol	İpekyol

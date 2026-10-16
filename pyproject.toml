@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=68", "wheel", "pybind11>=2.12"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "damga"
+version = "1.0.2"
+description = "Damga: open-source multilingual text normalization (TN) and inverse text normalization (ITN) for Turkish, English, German, French, Spanish, Italian and Russian by Mihu.ai"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "mihu.ai" }]
+keywords = ["turkish", "itn", "stt", "mihu-ai", "turkish-stt", "Text Normalization", "Metin Normalizasyonu", "text-normalization", "wfst", "pynini", "asr", "tts", "speech", "english", "german", "french", "spanish", "italian", "russian"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Natural Language :: Turkish",
+  "Natural Language :: English",
+  "Natural Language :: German",
+  "Natural Language :: French",
+  "Natural Language :: Spanish",
+  "Natural Language :: Italian",
+  "Natural Language :: Russian",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Text Processing :: Linguistic",
+]
+dependencies = []
+
+[project.optional-dependencies]
+build = ["pynini>=2.1.5"]
+dev = ["pytest>=7", "hypothesis>=6", "ruff>=0.4", "mypy>=1.8", "build", "twine"]
+
+[project.urls]
+Homepage = "https://github.com/mihu-ai/damga"
+Issues = "https://github.com/mihu-ai/damga/issues"
+
+[tool.setuptools]
+license-files = ["LICENSE", "NOTICE"]
+
+[tool.setuptools.packages.find]
+include = ["damga*"]
+
+[tool.setuptools.package-data]
+damga = ["*/itn/data/*.tsv", "*/tn/data/*.tsv", "*/itn/compiled/*", "*/tn/compiled/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+extend-exclude = [".conda", ".venv", "build", "dist"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501", "E702", "B008", "UP007", "UP035", "UP006"]
+
+[tool.ruff.lint.per-file-ignores]
+"damga/__init__.py" = ["E402", "F401"]
+"examples/*" = ["E402"]
+"tests/*" = ["E402", "F401"]
+"benchmarks/*" = ["E402"]
+
+[tool.mypy]
+ignore_missing_imports = true

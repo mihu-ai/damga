@@ -1,0 +1,103 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+
+jobs:
+  grammars:
+    name: compile grammars (pynini, Linux)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install --upgrade pip && pip install pynini pybind11 setuptools wheel pytest hypothesis ruff mypy
+      - run: python setup.py build_ext --inplace
+      - run: python -m damga.build
+      - run: ruff check .
+      - run: mypy damga --ignore-missing-imports
+      - name: tests on both backends
+        run: |
+          DAMGA_BACKEND=pynini pytest -q
+          DAMGA_BACKEND=native pytest -q
+      - uses: actions/upload-artifact@v4
+        with:
+          name: compiled-grammars
+          path: |
+            damga/*/itn/compiled/
+            damga/*/tn/compiled/
+
+  wheels:
+    name: wheels ${{ matrix.os }}
+    needs: grammars
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, ubuntu-24.04-arm, macos-14, macos-15-intel, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: compiled-grammars
+          path: damga/
+      - uses: pypa/cibuildwheel@v2.21.3
+        env:
+          CIBW_BUILD: "cp39-* cp310-* cp311-* cp312-* cp313-*"
+          CIBW_SKIP: "*-musllinux_* pp*"
+          CIBW_ARCHS_LINUX: "native"
+          CIBW_ARCHS_MACOS: "native"
+          CIBW_ARCHS_WINDOWS: "AMD64"
+          CIBW_TEST_REQUIRES: "pytest hypothesis"
+          CIBW_TEST_COMMAND: "python {project}/tests/run_installed.py"
+          CIBW_TEST_SKIP: "*-win32 *-macosx_x86_64"
+          CIBW_ENVIRONMENT: "DAMGA_BACKEND=native"
+          CIBW_ENVIRONMENT_MACOS: "DAMGA_BACKEND=native MACOSX_DEPLOYMENT_TARGET=10.15"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wheels-${{ matrix.os }}
+          path: wheelhouse/*.whl
+
+  sdist:
+    name: sdist
+    needs: grammars
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: compiled-grammars
+          path: damga/
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install build twine && python -m build --sdist && twine check dist/*
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sdist
+          path: dist/*.tar.gz
+
+  publish:
+    name: publish to PyPI (tags only)
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [wheels, sdist]
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: wheels-*
+          path: dist
+          merge-multiple: true
+      - uses: actions/download-artifact@v4
+        with:
+          name: sdist
+          path: dist
+      - run: ls -la dist
+      - uses: pypa/gh-action-pypi-publish@release/v1

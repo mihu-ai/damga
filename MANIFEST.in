@@ -1,0 +1,10 @@
+include LICENSE NOTICE README.md README.tr.md CHANGELOG.md CONTRIBUTING.md pyproject.toml setup.py
+graft src
+graft third_party/openfst
+graft damga
+graft tests
+graft docs
+graft examples
+graft benchmarks
+prune benchmarks/results
+global-exclude __pycache__ *.py[cod] *.so *.pyd *.far .DS_Store

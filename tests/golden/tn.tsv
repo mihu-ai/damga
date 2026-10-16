@@ -1,0 +1,369 @@
+# Damga TN golden set — written<TAB>spoken
+# --- cardinal
+125	yüz yirmi beş
+25.600	yirmi beş bin altı yüz
+1000	bin
+1.000.000	bir milyon
+0	sıfır
+-12	eksi on iki
+007	sıfır sıfır yedi
+25'te	yirmi beşte
+100'ün	yüzün
+Toplam 25.600 adet var.	Toplam yirmi beş bin altı yüz adet var.
+# --- ordinal
+3. kat	üçüncü kat
+25. yıl	yirmi beşinci yıl
+Saat 3.	Saat üç.
+3'üncü	üçüncü
+# --- decimal
+3,14	üç virgül on dört
+0,05	sıfır virgül sıfır beş
+1.200,5	bin iki yüz virgül beş
+# --- money
+150 TL	yüz elli Türk lirası
+₺150	yüz elli Türk lirası
+2,50 TL	iki lira elli kuruş
+12,5 €	on iki virgül beş euro
+$100	yüz dolar
+100 $	yüz dolar
+# --- percent
+%25	yüzde yirmi beş
+%12,5	yüzde on iki virgül beş
+25%	yüzde yirmi beş
+‰5	binde beş
+# --- measure
+25 km	yirmi beş kilometre
+1,5 lt	bir virgül beş litre
+30°	otuz derece
+100 m²	yüz metrekare
+# --- time
+09:30	dokuz otuz
+9:30	dokuz otuz
+09:00	dokuz
+09:05	dokuz sıfır beş
+saat 14.45	saat on dört kırk beş
+09:30'da	dokuz otuzda
+# --- date
+15.10.2026	on beş Ekim iki bin yirmi altı
+15/10/2026	on beş Ekim iki bin yirmi altı
+15 Ekim 2026	on beş Ekim iki bin yirmi altı
+15 Ekim	on beş Ekim
+Ekim 2026	Ekim iki bin yirmi altı
+2026'da	iki bin yirmi altıda
+15 Ekim'de görüşürüz	on beş Ekim'de görüşürüz
+# --- telephone
+0532 123 45 67	sıfır beş yüz otuz iki yüz yirmi üç kırk beş altmış yedi
+05321234567	sıfır beş yüz otuz iki yüz yirmi üç kırk beş altmış yedi
++90 532 123 45 67	artı doksan beş yüz otuz iki yüz yirmi üç kırk beş altmış yedi
+0 (532) 123 45 67	sıfır beş yüz otuz iki yüz yirmi üç kırk beş altmış yedi
+# --- iban
+# digit by digit, a pause between the written groups
+TR96 0006 2000 0000 0000 0000 00	te re dokuz altı, sıfır sıfır sıfır altı, iki sıfır sıfır sıfır, sıfır sıfır sıfır sıfır, sıfır sıfır sıfır sıfır, sıfır sıfır sıfır sıfır, sıfır sıfır
+IBAN: TR33 0006 1005 1978 6457 8413 26	IBAN: te re üç üç, sıfır sıfır sıfır altı, bir sıfır sıfır beş, bir dokuz yedi sekiz, altı dört beş yedi, sekiz dört bir üç, iki altı
+# --- plate
+34 ABC 842	otuz dört a be ce sekiz yüz kırk iki
+06 FH 713	altı fe he yedi yüz on üç
+# --- email / web
+derya.ozturk@gmail.com	derya nokta ozturk et gmail nokta com
+www.ornektur.com	www nokta ornektur nokta com
+# --- whitelist
+KDV dahil	ka de ve dahil
+Dr. Ayşe	doktor Ayşe
+# --- untouched
+merhaba dünya	merhaba dünya
+# dört softens before a vowel-initial suffix
+24'ü aldım	yirmi dördü aldım
+4'e kadar	dörde kadar
+4'ten	dörtten
+2004'e kadar	iki bin dörde kadar
+100	yüz
+2100	iki bin yüz
+# --- additional coverage (2026-10)
+# --- cardinal
+11	on bir
+101	yüz bir
+1.001	bin bir
+345.678	üç yüz kırk beş bin altı yüz yetmiş sekiz
+1.000.000.000	bir milyar
+2.300.000	iki milyon üç yüz bin
+10.000	on bin
+-5	eksi beş
+500 kişi	beş yüz kişi
+3 gün sonra	üç gün sonra
+# --- suffixes
+5'e	beşe
+5'i	beşi
+7'de	yedide
+9'dan	dokuzdan
+10'a kadar	ona kadar
+30'u	otuzu
+100'e	yüze
+1000'de	binde
+2'si	ikisi
+6'sı	altısı
+8'den	sekizden
+40'ta	kırkta
+# --- ordinal
+2. kat	ikinci kat
+10. sınıf	onuncu sınıf
+100. yıl	yüzüncü yıl
+5'inci	beşinci
+# --- decimal
+1,5	bir virgül beş
+10,25	on virgül yirmi beş
+0,1	sıfır virgül bir
+# --- money
+5 TL	beş Türk lirası
+10 TL	on Türk lirası
+₺1.000	bin Türk lirası
+99,99 TL	doksan dokuz lira doksan dokuz kuruş
+1.250.000 TL	bir milyon iki yüz elli bin Türk lirası
+€100	yüz euro
+100 €	yüz euro
+50 $	elli dolar
+# --- percent
+%5	yüzde beş
+%50	yüzde elli
+%0,5	yüzde sıfır virgül beş
+%18 KDV	yüzde on sekiz ka de ve
+# --- measure
+10 km	on kilometre
+5 kg	beş kilogram
+300 g	üç yüz gram
+100 ml	yüz mililitre
+50 cm	elli santimetre
+20°	yirmi derece
+-5°	eksi beş derece
+200 MB	iki yüz megabayt
+5 GB	beş gigabayt
+2 m	iki metre
+# --- time
+08:00	sekiz
+12:30	on iki otuz
+18:45	on sekiz kırk beş
+23:59	yirmi üç elli dokuz
+00:15	sıfır on beş
+saat 9	saat dokuz
+saat 17:30	saat on yedi otuz
+17:30'da	on yedi otuzda
+# --- date
+23 Nisan	yirmi üç Nisan
+29 Ekim 1923	yirmi dokuz Ekim bin dokuz yüz yirmi üç
+1.1.2027	bir Ocak iki bin yirmi yedi
+31/12/2026	otuz bir Aralık iki bin yirmi altı
+1 Mayıs'ta	bir Mayıs'ta
+2026	iki bin yirmi altı
+1923'te	bin dokuz yüz yirmi üçte
+# --- telephone
+0212 345 67 89	sıfır iki yüz on iki üç yüz kırk beş altmış yedi seksen dokuz
+0555 111 22 33	sıfır beş yüz elli beş yüz on bir yirmi iki otuz üç
++90 212 345 67 89	artı doksan iki yüz on iki üç yüz kırk beş altmış yedi seksen dokuz
+# --- plate
+35 AB 123	otuz beş a be yüz yirmi üç
+# --- email / web
+ali@yahoo.com	ali et yahoo nokta com
+ahmet.yilmaz@hotmail.com	ahmet nokta yilmaz et hotmail nokta com
+www.google.com	www nokta google nokta com
+# --- whitelist
+KDV	ka de ve
+TC	te ce
+ABD	a be de
+# --- untouched
+günaydın	günaydın
+merhaba, nasılsınız?	merhaba, nasılsınız?
+# --- additional coverage round 2
+# --- cardinal / suffix
+12	on iki
+19	on dokuz
+20	yirmi
+33	otuz üç
+47	kırk yedi
+58	elli sekiz
+66	altmış altı
+75	yetmiş beş
+84	seksen dört
+99	doksan dokuz
+110	yüz on
+999	dokuz yüz doksan dokuz
+1.100	bin yüz
+12.345	on iki bin üç yüz kırk beş
+100.000	yüz bin
+1.234.567	bir milyon iki yüz otuz dört bin beş yüz altmış yedi
+15'e	on beşe
+15'i	on beşi
+20'de	yirmide
+50'nin	ellinin
+3'ü	üçü
+7'nci	yedinci
+60'ta	altmışta
+80'den	seksenden
+90'a	doksana
+# --- ordinal
+4. gün	dördüncü gün
+7. kat	yedinci kat
+20. yüzyıl	yirminci yüzyıl
+# --- money
+1 TL	bir Türk lirası
+15 TL	on beş Türk lirası
+250 TL	iki yüz elli Türk lirası
+1.499,90 TL	bin dört yüz doksan dokuz lira doksan kuruş
+₺12,50	on iki lira elli kuruş
+€5	beş euro
+$20	yirmi dolar
+# --- percent / measure
+%100	yüzde yüz
+%7	yüzde yedi
+%99,9	yüzde doksan dokuz virgül dokuz
+12 km	on iki kilometre
+3 kg	üç kilogram
+750 ml	yedi yüz elli mililitre
+1,5 m	bir virgül beş metre
+180 cm	yüz seksen santimetre
+37°	otuz yedi derece
+120 km/s	yüz yirmi kilometre saat
+90 km/sa	doksan kilometre saat
+5 m/s	beş metre saniye
+# --- time
+01:00	bir
+06:15	altı on beş
+10:10	on on
+13:05	on üç sıfır beş
+21:30	yirmi bir otuz
+saat 8:15	saat sekiz on beş
+# --- date
+1 Ocak 2027	bir Ocak iki bin yirmi yedi
+14.02.2026	on dört Şubat iki bin yirmi altı
+30 Ağustos	otuz Ağustos
+19 Mayıs 1919	on dokuz Mayıs bin dokuz yüz on dokuz
+1.5.2026	bir Mayıs iki bin yirmi altı
+# --- telephone / plate / email
+0850 123 45 67	sıfır sekiz yüz elli yüz yirmi üç kırk beş altmış yedi
+0800 123 45 67	sıfır sekiz yüz yüz yirmi üç kırk beş altmış yedi
+0312 123 45 67	sıfır üç yüz on iki yüz yirmi üç kırk beş altmış yedi
+ali.veli@gmail.com	ali nokta veli et gmail nokta com
+ali_veli@hotmail.com	ali alt çizgi veli et hotmail nokta com
+# --- untouched
+Merhaba!	Merhaba!
+Nasılsınız?	Nasılsınız?
+Teşekkürler.	Teşekkürler.
+# --- decimals, ranges and more (2026-10): point decimals, ranges, alphanumerics, ordinals before names, signs
+# a point decimal keeps the point in the reading; two fractional digits are read as two numbers (prices, rates)
+1.6 milyon insan	bir nokta altı milyon insan
+12.3 milyondan az	on iki nokta üç milyondan az
+3.56 milyon dolar	üç nokta elli altı milyon dolar
+6.97 seviyesinden	altı doksan yedi seviyesinden
+4.17'si kendine	dört on yedisi kendine
+Saat 17.30 olmasın	Saat on yedi otuz olmasın
+8.05'te	sekiz sıfır beşte
+%3.6'lık	yüzde üç nokta altılık
+1.5 lt	bir nokta beş litre
+# three digits after the point are a thousands group, not a decimal
+1.500 kişi	bin beş yüz kişi
+# a back-vowel suffix after ,5 means buçuk; dört softens in decimals too
+%2,5'luk	yüzde iki buçukluk
+2,5'a	iki buçuğa
+1,4'e kadar	bir virgül dörde kadar
+# ranges and scores: the numbers juxtaposed
+3-5 tane	üç beş tane
+68-69 yılları	altmış sekiz altmış dokuz yılları
+# numbers of three or more digits run together, so their range takes ile
+1870-1871	bin sekiz yüz yetmiş ile bin sekiz yüz yetmiş bir
+1914-1918 yılları arasında	bin dokuz yüz on dört ile bin dokuz yüz on sekiz yılları arasında
+1914-1918'de	bin dokuz yüz on dört ile bin dokuz yüz on sekizde
+1.000-2.000 kişi	bin ile iki bin kişi
+%30-40	yüzde otuz kırk
+7.-8. sınıf	yedinci sekizinci sınıf
+6.85-7.28 bandında	altı seksen beş yedi yirmi sekiz bandında
+2-1 kazandı	iki bir kazandı
+1950-60'lı yıllar	bin dokuz yüz elli altmışlı yıllar
+15-10-2026	on beş Ekim iki bin yirmi altı
+# letters and numbers
+Covid-19'un	Covid on dokuzun
+F-35'ler	F otuz beşler
+F16	F on altı
+S-400	S dört yüz
+21-B	yirmi bir B
+# ordinals: names that take an ordinal, glued points; a point at the end of a sentence stays a cardinal
+1. Dünya Savaşı	birinci Dünya Savaşı
+2. Dünya Savaşı'nda	ikinci Dünya Savaşı'nda
+3. Haçlı seferi	üçüncü Haçlı seferi
+6.sınıf	altıncı sınıf
+sonucu 4. Tamam.	sonucu dört. Tamam.
+# signs: + always, - between operands; a dash between words stays
+x + 1	x artı bir
+15 - b	on beş eksi b
++50 litre	artı elli litre
+-8 derece	eksi sekiz derece
+Ankara - İstanbul	Ankara - İstanbul
+28.10.2024'te	yirmi sekiz Ekim iki bin yirmi dörtte
+x-1	x-1
+e-posta	e-posta
+Galatasaray 2 - 1 Fenerbahçe	Galatasaray iki bir Fenerbahçe
+1990 - 2000 yılları	bin dokuz yüz doksan ile iki bin yılları
+Sayfa 10 - 15	Sayfa on on beş
+Bölüm 3 - Sonuç	Bölüm üç - Sonuç
+İzmir - 3 kişi kurtarıldı	İzmir - üç kişi kurtarıldı
+Mesai 09.00 - 17.00 arası	Mesai 09.00 - 17.00 arası
+x - 1	x eksi bir
+2 - x	iki eksi x
+Fiyat 3.50 TL	Fiyat üç lira elli kuruş
+1.500 TL	bin beş yüz Türk lirası
+5-li grup	beşli grup
+3-lük paket	üçlük paket
+dedim B5. Gel	dedim B beş. Gel
+Model A4. Sonra	Model A dört. Sonra
+Kilo Bravo 4. Kerem geldi	Kilo Bravo dört. Kerem geldi
+2. Abdülhamit	ikinci Abdülhamit
+0532 - 123 - 45 - 67	sıfır beş üç iki - yüz yirmi üç - kırk beş - altmış yedi
+3 - 4 - 5	üç - dört - beş
+Sultan 2. Mehmet	Sultan ikinci Mehmet
+3. Selim döneminde	üçüncü Selim döneminde
+1. Murat	birinci Murat
+Kanuni 1. Süleyman	Kanuni birinci Süleyman
+7. Mehmet	yedi. Mehmet
+# no grammar reads -3. or 0. as an ordinal: they stay numbers, the rest of the sentence keeps its ordinals
+Otopark da -2. kattaydı.	Otopark da eksi iki. kattaydı.
+3'ün 5. kuvveti, 4. kuvveti, 0. kuvveti olsun	üçün beşinci kuvveti, dördüncü kuvveti, sıfır. kuvveti olsun
+# a suffix after a currency symbol is built again on the spoken word: TL'ye is written for te-le
+5 TL'ye	beş Türk lirasına
+5 TL'den	beş Türk lirasından
+5 TL'lik	beş Türk liralık
+250 TL'yi	iki yüz elli Türk lirasını
+3,50 TL'den	üç lira elli kuruştan
+3,50 TL'ye	üç lira elli kuruşa
+10 $'a	on dolara
+100 €'dan	yüz eurodan
+# only a symbol or an ISO code comes before the amount
+Beş yüz bin lira 2022'den kalan borç	Beş yüz bin lira iki bin yirmi ikiden kalan borç
+USD 100	yüz dolar
+IP adresi 192.168.1.1	IP adresi yüz doksan iki nokta yüz altmış sekiz nokta bir nokta bir
+sürüm 3.2.1 yayınlandı	sürüm üç nokta iki nokta bir yayınlandı
+10.0.0.1'e bağlan	on nokta sıfır nokta sıfır nokta bire bağlan
+1.50 m boyunda	bir elli metre boyunda
+10.25 m	on nokta yirmi beş metre
+14 Haziran'da geldi	on dört Haziran'da geldi
+21 mayıs	yirmi bir mayıs
+M parantezinde M - 2 yazıyorum	M parantezinde M eksi iki yazıyorum
+# fractions: the denominator in the locative first; 7/24 and 24/7 are two numbers
+1/2 oranında	ikide bir oranında
+3/4 kısmı	dörtte üç kısmı
+2/3 çoğunluk	üçte iki çoğunluk
+1/10	onda bir
+9/100	yüzde dokuz
+1/40	kırkta bir
+7/24 hizmet	yedi yirmi dört hizmet
+24/7 açık	yirmi dört yedi açık
+31/12/2026	otuz bir Aralık iki bin yirmi altı
+# bank numbers after a bank word: digit by digit, a pause between the written groups
+Hesap numarası: 12345678	Hesap numarası: bir iki üç dört beş altı yedi sekiz
+Hesap no 1234-5678-90, şube kodu 0123.	Hesap no bir iki üç dört, beş altı yedi sekiz, dokuz sıfır, şube kodu sıfır bir iki üç.
+müşteri numaram 987 654 321	müşteri numaram dokuz sekiz yedi, altı beş dört, üç iki bir
+Hesap 500 TL eksik.	Hesap beş yüz Türk lirası eksik.
+# a suffix after a phone number is said after the last group
+Bizi 0212 123 45 67'den arayın.	Bizi sıfır iki yüz on iki yüz yirmi üç kırk beş altmış yediden arayın.
+0532 123 45 67'yi	sıfır beş yüz otuz iki yüz yirmi üç kırk beş altmış yediyi
++90 532 123 45 64'e	artı doksan beş yüz otuz iki yüz yirmi üç kırk beş altmış dörde
+# +90 written with dashes or as 0090
++90-532-123-45-67	artı doksan beş yüz otuz iki yüz yirmi üç kırk beş altmış yedi
+0090 532 123 45 67	sıfır sıfır doksan beş yüz otuz iki yüz yirmi üç kırk beş altmış yedi
+0532-123-45-67	sıfır beş yüz otuz iki yüz yirmi üç kırk beş altmış yedi
