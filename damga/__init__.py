@@ -1,4 +1,4 @@
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 
 from .api import DEFAULT_LANG, InverseNormalizer, Normalizer, TextNormalizer, available_languages
 

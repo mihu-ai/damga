@@ -4,7 +4,12 @@ All notable changes to this project are documented here.  The format follows
 [Keep a Changelog](https://keepachangelog.com/) and the project uses
 [Semantic Versioning](https://semver.org/).
 
-## [Unreleased]
+## [1.0.3] — 2026-10-20
+
+### Changed
+- Examples and docs follow turkish-stt 2.0 (model `mihuai/turkish-stt-66m-v2`): `examples/mihu_stt_onprem.py`
+  takes `--v1` for the previous model instead of `--fp32`, and the microphone examples open the device at its own
+  sample rate, so Bluetooth headsets that refuse 16 kHz work.
 
 ### Fixed
 - Turkish ITN: number-word idioms stay words instead of turning into digits — "üç beş kuruş" was
