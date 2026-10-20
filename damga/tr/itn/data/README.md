@@ -8,6 +8,7 @@ lower-case (`İ → i`, `I → ı`).
 | `currency.tsv` | spoken currency → symbol (+ minor unit) | hand-written (Apache-2.0) |
 | `units.tsv` | spoken unit → abbreviation | hand-written |
 | `lexicon_entries.tsv` | spelled acronyms → written (`ka de ve` → KDV) | hand-written |
+| `idioms.tsv` | number-word idioms kept as words (`üç beş kişi`, `bin bir gece`); `*` = suffixes allowed, `+` = needs a following word | hand-written |
 | `brands.tsv` | brands/products incl. Turkish mis-hearings (`vatsap` → WhatsApp) | hand-written |
 | `brands_extra.tsv` | ~700 well-known businesses, brands and Turkish institutions | curated list (Apache-2.0); single Turkish common words are filtered out by hand |
 | `domains.tsv` | mis-heard e-mail domains → canonical label (`cimil` → gmail) | hand-written |

@@ -1,0 +1,32 @@
+# Number-word idioms that ITN must leave as words (one per line; Turkish lower-case; '#' = comment).
+# These are not quantities: "üç beş kişi" is "a few people", "bin bir zahmetle" is "with countless troubles".
+# A trailing '*' lets Turkish suffixes attach to the last word ("bin bir gece*" also keeps "bin bir gecede").
+# A trailing '+' requires a following non-number word: "üç beş kişi" stays, but digit-by-digit dictation
+# ("sıfır beş üç beş üç beş …") and times ("saat üç beş") still convert.
+# The phrase must cover the whole idiom: plain "bin bir" and "bin bir lira" still convert (1.001, 1.001 TL).
+
+# "a few"
+üç beş+
+üç beş kuruş*
+üç beş para*
+
+# "countless / all kinds of"
+bin bir gece*
+bin bir çeşit*
+bin bir türlü*
+bin bir zahmet*
+bin bir emek*
+bin bir güçlük*
+bin bir sıkıntı*
+bin bir dert*
+bin bir derd*
+bin bir yalan*
+bin bir surat*
+bin bir renk*
+bin bir oyun*
+
+# fixed expressions
+kırk yılda bir
+bir kahvenin kırk yıl hatırı*
+yedi iklim dört bucak*
+dokuz canlı*

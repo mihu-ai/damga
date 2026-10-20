@@ -799,3 +799,24 @@ ye me ve içme	ye me ve içme
 a de ne ve	a de ne ve
 gel ye ye	gel ye ye
 bir de a ne e	bir de a ne e
+# --- idioms: number words that are not quantities stay words (data/idioms.tsv)
+üç beş kuruş	üç beş kuruş
+üç beş kuruşa satmışlar	üç beş kuruşa satmışlar
+üç beş kişi geldi	üç beş kişi geldi
+Üç beş gün sonra	Üç beş gün sonra
+bin bir gece masalları	bin bir gece masalları
+bin bir gecede	bin bir gecede
+bin bir zahmetle geldik	bin bir zahmetle geldik
+bin bir çeşit yemek	bin bir çeşit yemek
+kırk yılda bir uğrar	kırk yılda bir uğrar
+yedi iklim dört bucaktan	yedi iklim dört bucaktan
+# idioms: the same number words still convert when they are quantities
+üç beş	3 5
+beş kuruş	0,05 TL
+bin bir	1.001
+bin bir lira	1.001 TL
+bin bir kişi	1.001 kişi
+üç bin beş yüz lira	3.500 TL
+saat üç beş	saat 03:05
+saat üç beş geçiyor	saat 03:05 geçiyor
+sıfır beş üç beş üç beş iki iki üç üç	0 5 3 5 3 5 2 2 3 3

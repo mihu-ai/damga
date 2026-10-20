@@ -4,6 +4,15 @@ All notable changes to this project are documented here.  The format follows
 [Keep a Changelog](https://keepachangelog.com/) and the project uses
 [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Fixed
+- Turkish ITN: number-word idioms stay words instead of turning into digits — "üç beş kuruş" was
+  `3 0,05 TL`, "bin bir gece masalları" was `1.001 gece masalları`, "üç beş kişi" was `3 5 kişi`.  The list
+  is `damga/tr/itn/data/idioms.tsv` (one phrase per line; `*` allows suffixes, `+` needs a following word).
+  The same words still convert when they are quantities: "bin bir lira" → `1.001 TL`, "beş kuruş" →
+  `0,05 TL`, "saat üç beş" → `saat 03:05`, and digit-by-digit dictation ("sıfır beş üç beş …") is unchanged.
+
 ## [1.0.2] — 2026-10-17
 
 ### Changed
