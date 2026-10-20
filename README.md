@@ -247,9 +247,12 @@ LLM (Ollama, …) / database → written text → Damga TN → spoken text → T
 
 ### Mihu Turkish STT
 
-[`turkish-stt`](https://huggingface.co/mihuai/turkish-stt) is a real-time,
+[`turkish-stt`](https://github.com/mihu-ai/turkish-stt) (model:
+[`mihuai/turkish-stt-66m-v2`](https://huggingface.co/mihuai/turkish-stt-66m-v2)) is a real-time,
 CPU-only Turkish recognizer with turn-end detection.  It writes numbers as
-words; Damga turns them into their written form.  Damga does not depend on it:
+words; Damga turns them into their written form.  Damga does not depend on it.
+Since turkish-stt 2.0, `mihu_stt.transcribe(..., itn=True)` (`pip install "turkish-stt[itn]"`) runs
+Damga for you; the explicit form below gives you streaming control:
 
 ```python
 import mihu_stt                                # pip install turkish-stt (on-prem, CPU)

@@ -48,7 +48,7 @@ Streaming: the recognizer returns a growing hypothesis per chunk and
 import mihu_stt
 from damga.streaming import StreamingNormalizer
 
-stt = mihu_stt.StreamingSTT()          # model_dir=..., quantized=False, num_threads=... to pick the model
+stt = mihu_stt.StreamingSTT()          # model="v1" (previous model), model_dir=..., num_threads=...
 sn = StreamingNormalizer(mode="itn", stable_after=2)
 for pcm16 in audio_frames():           # 16 kHz int16 bytes, as they arrive
     text, is_final = stt.accept_pcm16(pcm16, 16000)

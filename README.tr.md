@@ -245,10 +245,13 @@ LLM (Ollama, …) / veritabanı → yazılı metin → Damga TN → sözlü meti
 
 ### Mihu Türkçe STT
 
-[`turkish-stt`](https://huggingface.co/mihuai/turkish-stt), konuşma sonu
+[`turkish-stt`](https://github.com/mihu-ai/turkish-stt) (model:
+[`mihuai/turkish-stt-66m-v2`](https://huggingface.co/mihuai/turkish-stt-66m-v2)), konuşma sonu
 algılamalı, yalnız CPU ile çalışan gerçek zamanlı bir Türkçe tanıyıcıdır.
 Sayıları kelimeyle yazar; Damga onları yazılı biçime çevirir. Damga ona bağımlı
-değildir:
+değildir. turkish-stt 2.0'dan itibaren `mihu_stt.transcribe(..., itn=True)`
+(`pip install "turkish-stt[itn]"`) Damga'yı sizin yerinize çalıştırır; aşağıdaki açık
+kullanım ise streaming üzerinde tam kontrol verir:
 
 ```python
 import mihu_stt                                # pip install turkish-stt (on-prem, CPU)

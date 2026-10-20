@@ -3,15 +3,16 @@
     pip install damga turkish-stt soundfile
     python examples/mihu_stt_onprem.py audio.wav [more.wav ...]
     python examples/mihu_stt_onprem.py audio.wav --model-dir /models/mihu-stt    # another model folder
-    python examples/mihu_stt_onprem.py audio.wav --fp32                          # unquantized encoder
+    python examples/mihu_stt_onprem.py audio.wav --v1                            # previous model (turkish-stt>=2)
 
 The recognizer writes numbers, dates and e-mail addresses as words ("sıfır beş otuz iki …");
 Damga turns them into their written form ("0532 …").  For every file: one-shot transcription,
 timed segments, then the first file again as a simulated live stream (100 ms chunks) so you can
 watch the normalized text grow while the speaker is still talking.
 
-Audio never leaves the machine.  The default model downloads once from Hugging Face and is cached;
---model-dir loads a folder with tokens.txt, encoder(.int8).onnx, decoder.onnx and joiner.int8.onnx.
+Audio never leaves the machine.  The default model (turkish-stt 2.x: mihuai/turkish-stt-66m-v2) downloads
+once from Hugging Face and is cached; --model-dir loads a folder with tokens.txt, encoder.int8.onnx,
+decoder(.int8).onnx and joiner.int8.onnx.
 """
 import argparse
 
@@ -25,9 +26,11 @@ from damga.streaming import StreamingNormalizer
 ap = argparse.ArgumentParser()
 ap.add_argument("audio", nargs="+")
 ap.add_argument("--model-dir", default=None, help="local model folder (default: the built-in model)")
-ap.add_argument("--fp32", action="store_true", help="use the unquantized encoder")
+ap.add_argument("--v1", action="store_true", help="use the previous model, mihuai/turkish-stt (turkish-stt>=2)")
 args = ap.parse_args()
-model = {"model_dir": args.model_dir, "quantized": not args.fp32}
+model = {"model_dir": args.model_dir}
+if args.v1:  # turkish-stt 2.x picks the model by name; 1.x has only v1 and no `model` argument
+    model["model"] = "v1"
 
 itn = InverseNormalizer()
 
