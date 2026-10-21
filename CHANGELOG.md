@@ -4,6 +4,25 @@ All notable changes to this project are documented here.  The format follows
 [Keep a Changelog](https://keepachangelog.com/) and the project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.0.4] — 2026-10-22
+
+### Changed
+- Docs: the default is described as **deterministic** (one input, one output; ITN is always) and
+  `variants=True` as the **non-deterministic** mode (one input, several valid readings, picked by what was heard or
+  by a language model).  The 1.0 option name `deterministic` moved to a short note at the end.
+
+### Added
+- `damga.shell_form()` (Turkish): spoken command lines for terminals — "ls tire lah" → `ls -lah`, "git çift tire
+  version" → `git --version`, "cat dosya nokta txt" → `cat dosya.txt`, "ps aux boru grep python" →
+  `ps aux | grep python`.  50 symbols with their Turkish and English names and common mishearings ("eksi",
+  "minus", "maynus" → `-`; "slash", "slaş", "bölü" → `/`), comparison, assignment and math operators ("büyük
+  eşit" → `>=`, "eşit değil" → `!=`, "artı eşittir" → `+=`, "çarpı" → `*`, "üzeri" → `^`; spaced between two
+  numbers: `2 + 3`), quotes and brackets, spelled letters in Turkish and English names ("tire el a haş" →
+  `-lah`, "tar tire iks ve ef" → `tar -xvf`, "pi ey es es dabılyu di" → `passwd`), and fixes for mis-heard command
+  names ("el es" → `ls`).  Pure Python, opt-in, separate from the ITN grammars: run it on ITN output meant for a
+  shell, never on prose.  `damga.tr.shell.spell_letters()` joins only the spelled letters and is meant to run
+  *before* ITN: ITN's own spelling rules read some letter names differently ("pi ey es es dabılyu" → `Pw`).
+
 ## [1.0.3] — 2026-10-20
 
 ### Changed

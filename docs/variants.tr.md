@@ -2,15 +2,20 @@
 
 *English: [variants.md](variants.md)*
 
-Damga'da iki TN modu vardır. **Varsayılan, her yazılı biçime tek okunuştur**
-ve ITN'in tek modu da odur; `variants=True` diğer okunuşları da ekler. İki mod
-da deterministiktir: aynı girdi her zaman aynı çıktıyı verir.
+Damga'da iki TN modu vardır.
 
-1.0'da bu seçeneğin adı `deterministic` idi (`deterministic=False`,
-`variants=True` demektir); eski ad hâlâ çalışır ve `DeprecationWarning` verir.
+- **Deterministik (varsayılan):** bir girdi, tek çıktı. `09:30` her zaman
+  *dokuz otuz*dur. ITN'in tek modu da budur.
+- **Varyantlar, `variants=True` (deterministik olmayan):** bir girdi, birden çok
+  geçerli çıktı. `09:30` *dokuz otuz* da olur *dokuz buçuk* da; hangisinin uygun
+  olduğuna girdi tek başına değil, duyulan ses (`normalize_matching`) ya da bir
+  dil modeli (`normalize_in_context`) karar verir. Okunuş listesi
+  tekrarlanabilir (her seferinde aynı okunuşlar, aynı sırada) ve `normalize()`
+  yine tek varsayılan okunuşu döndürür.
 
 | | Tek okunuş (varsayılan) | Varyantlar |
 | --- | --- | --- |
+| Deterministik | **evet**: bir girdi, tek çıktı | **hayır**: bir girdi, birden çok çıktı (listenin kendisi tekrarlanabilir) |
 | Nasıl açılır | `TextNormalizer()` | `TextNormalizer(variants=True)` |
 | Bir yazılı biçime kaç okunuş | bir | varsayılan + yaygın diğer okunuşlar |
 | `normalize()` | o tek okunuş | aynı tek okunuş, değişmez |
@@ -262,3 +267,8 @@ için ilgili okuyucu) ve `tests/golden/test_golden_<dil>.py` içine bir örnek
 ekleyin. Yalnızca konuşmacının söylediği kelimeleri değiştiren okunuşları
 listeleyin, üslup farklarını değil; ve yalnızca konuşanların gerçekten
 kullandığı okunuşları.
+
+## Eski ad (1.0)
+
+1.0'da bu seçeneğin adı `deterministic` idi: `deterministic=False`, `variants=True` demektir.
+Eski ad hâlâ çalışır ve `DeprecationWarning` verir; 2.0'da kaldırılacak.

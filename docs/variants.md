@@ -2,15 +2,20 @@
 
 *Türkçe: [variants.tr.md](variants.tr.md)*
 
-Damga has two TN modes.  **One reading per written form is the default** and
-the only mode of ITN; `variants=True` adds the other readings.  Both modes are
-deterministic: the same input always gives the same output.
+Damga has two TN modes.
 
-In 1.0 the option was called `deterministic` (`deterministic=False` is
-`variants=True`); the old name still works and gives a `DeprecationWarning`.
+- **Deterministic (default):** one input, one output.  `09:30` is always
+  *dokuz otuz*.  This is also the only mode of ITN.
+- **Variants, `variants=True` (non-deterministic):** one input, several valid
+  outputs.  `09:30` is *dokuz otuz* or *dokuz buçuk*; which one fits is decided
+  by what was heard (`normalize_matching`) or by a language model
+  (`normalize_in_context`), not by the input alone.  The list of readings is
+  reproducible (the same readings in the same order every time), and
+  `normalize()` still returns the one default reading.
 
 | | One reading (default) | Variants |
 | --- | --- | --- |
+| Deterministic | **yes**: one input, one output | **no**: one input, several outputs (the list itself is reproducible) |
 | How to get it | `TextNormalizer()` | `TextNormalizer(variants=True)` |
 | Readings per written form | one | the default plus the other common readings |
 | `normalize()` | the one reading | the same one reading, unchanged |
@@ -256,3 +261,8 @@ the reading to the language's variants grammar (`rewrites()` in its
 change of order) with a weight that keeps it behind the default, and a case to
 its `tests/golden/test_golden_<lang>.py`.  List only readings that change the
 words a speaker says, not style, and only readings speakers actually use.
+
+## Old name (1.0)
+
+In 1.0 the option was called `deterministic`: `deterministic=False` is `variants=True`.
+The old name still works and gives a `DeprecationWarning`; it will be removed in 2.0.

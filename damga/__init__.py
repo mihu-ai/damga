@@ -1,6 +1,6 @@
-__version__ = "1.0.3"
+__version__ = "1.0.4"
 
-from .api import DEFAULT_LANG, InverseNormalizer, Normalizer, TextNormalizer, available_languages
+from .api import DEFAULT_LANG, InverseNormalizer, Normalizer, TextNormalizer, available_languages, shell_form
 
 
 def __getattr__(name):
@@ -10,4 +10,5 @@ def __getattr__(name):
     raise AttributeError(name)
 
 
-__all__ = ["Normalizer", "InverseNormalizer", "TextNormalizer", "StreamingNormalizer", "available_languages", "DEFAULT_LANG", "__version__"]
+__all__ = ["Normalizer", "InverseNormalizer", "TextNormalizer", "StreamingNormalizer", "available_languages", "shell_form", "DEFAULT_LANG",
+           "__version__"]

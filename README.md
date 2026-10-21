@@ -124,7 +124,7 @@ from damga import InverseNormalizer
 InverseNormalizer(lang="en", unit_symbols=True).normalize("two hundred kilometers per hour")   # "200 km/h"
 ```
 
-### One reading (default) or variants
+### Deterministic (default) or variants (non-deterministic)
 
 By default Damga gives **one reading**: one written form, one spoken form,
 every time.  That is what a voice agent needs, and `normalize()` always works
@@ -145,11 +145,18 @@ tn.normalize_variants("2,50 TL")          # ['iki lira elli kuruş', 'iki Türk 
 tn.normalize_matching("Saat 09:30'da", heard="saat dokuz buçukta")   # 'Saat dokuz buçukta'
 ```
 
-ITN has no variants: a phone number or an amount has one written form, and
-guessing between several is exactly what ITN must not do.  In 1.0 the option
-was called `deterministic` (`deterministic=False`); the old name still works
-with a `DeprecationWarning`.  Details:
+**Deterministic or not.**  The default is **deterministic**: one input, one
+output, the same in every call.  ITN is always deterministic: a phone number or
+an amount has one written form, and guessing between several is exactly what
+ITN must not do.  `variants=True` is the **non-deterministic** mode: one input
+has several valid readings, and which one is right is decided by what was
+heard (`normalize_matching`) or by a language model (`normalize_in_context`),
+not by the input alone.  The list itself is reproducible (same readings, same
+order), and `normalize()` stays deterministic in this mode too.  Details:
 [docs/variants.md](https://github.com/mihu-ai/damga/blob/main/docs/variants.md).
+
+<sub>In 1.0 the option was called `deterministic` (`deterministic=False` is
+`variants=True`); the old name still works with a `DeprecationWarning`.</sub>
 
 ### Streaming ITN for live ASR
 
@@ -167,6 +174,25 @@ utterance.  A prefix is committed only when it has been stable for
 `stable_after` updates *and* does not end inside a span a grammar could still
 extend, so a number is never frozen too early.  The final result is always the
 batch normalization of the whole utterance.  See [docs/streaming.md](https://github.com/mihu-ai/damga/blob/main/docs/streaming.md).
+
+### Dictating terminal commands
+
+```python
+from damga import InverseNormalizer, shell_form
+
+itn = InverseNormalizer()
+shell_form(itn.normalize("ls tire lah"))                     # 'ls -lah'
+shell_form(itn.normalize("git çift tire version"))           # 'git --version'
+shell_form(itn.normalize("cat dosya nokta txt"))             # 'cat dosya.txt'
+shell_form(itn.normalize("ps aux boru grep python"))         # 'ps aux | grep python'
+shell_form(itn.normalize("curl localhost iki nokta üst üste sekiz bin"))  # 'curl localhost:8000'
+```
+
+`shell_form` turns symbols said as words into a command line: `tire` / `eksi` / `minus` → `-`, `çift tire` → `--`,
+`slash` / `bölü` → `/`, `nokta` → `.`, `boru` / `pipe` → `|`, `ve ve` → `&&`, `çift tırnak … çift tırnak` → `"…"`
+and ~30 more (the full table is `SHELL_SYMBOLS` in `damga/tr/shell.py`).  It lower-cases, drops the recognizer's
+punctuation and fixes command names the recognizer often mishears (`el es` → `ls`, `si di` → `cd`).  Run it only
+on text meant for a terminal: in prose "eksi", "nokta" and "bölü" are ordinary Turkish words.
 
 ## How it works: a token-based, two-pass WFST pipeline
 

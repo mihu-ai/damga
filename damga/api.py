@@ -37,6 +37,15 @@ def TextNormalizer(*args: Any, lang: str = DEFAULT_LANG, **kwargs: Any):
     return language_module(lang, "tn").TextNormalizer(*args, **kwargs)
 
 
+def shell_form(text: str, lang: str = DEFAULT_LANG) -> str:
+    """Spoken command line -> shell text (``ls tire lah`` -> ``ls -lah``); run it on ITN output meant for a
+    terminal, never on prose.  Turkish only; see damga/tr/shell.py."""
+    if lang != "tr":
+        raise ValueError(f"shell_form supports 'tr' only, got {lang!r}")
+    from .tr.shell import shell_form as tr_shell_form
+    return tr_shell_form(text)
+
+
 class Normalizer:
 
     def __init__(self, mode: str = "itn", lang: str = DEFAULT_LANG, **kwargs):

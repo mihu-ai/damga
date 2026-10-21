@@ -122,7 +122,7 @@ from damga import InverseNormalizer
 InverseNormalizer(lang="en", unit_symbols=True).normalize("two hundred kilometers per hour")   # "200 km/h"
 ```
 
-### Tek okunuş (varsayılan) ya da varyantlar
+### Deterministik (varsayılan) ya da varyantlar (deterministik olmayan)
 
 Damga varsayılan olarak **tek okunuş** verir: bir yazılı biçim, her seferinde
 tek bir okunuş. Sesli asistanın ihtiyacı budur ve `normalize()` her zaman böyle
@@ -144,11 +144,18 @@ tn.normalize_variants("2,50 TL")          # ['iki lira elli kuruş', 'iki Türk 
 tn.normalize_matching("Saat 09:30'da", heard="saat dokuz buçukta")   # 'Saat dokuz buçukta'
 ```
 
-ITN'de varyant yoktur: bir telefon numarasının ya da tutarın tek yazılı
-biçimi vardır ve birkaçı arasında tahmin yürütmek ITN'in tam da yapmaması
-gereken şeydir. 1.0'da bu seçeneğin adı `deterministic` idi
-(`deterministic=False`); eski ad hâlâ `DeprecationWarning` ile çalışır.
-Ayrıntı: [docs/variants.tr.md](docs/variants.tr.md).
+**Deterministik mi, değil mi.** Varsayılan **deterministiktir**: bir girdi,
+tek çıktı, her çağrıda aynı. ITN her zaman deterministiktir: bir telefon
+numarasının ya da tutarın tek yazılı biçimi vardır ve birkaçı arasında tahmin
+yürütmek ITN'in tam da yapmaması gereken şeydir. `variants=True` ise
+**deterministik olmayan** moddur: bir girdinin birden çok geçerli okunuşu
+vardır ve hangisinin doğru olduğuna girdi tek başına değil, duyulan ses
+(`normalize_matching`) ya da bir dil modeli (`normalize_in_context`) karar
+verir. Listenin kendisi tekrarlanabilir (aynı okunuşlar, aynı sıra); bu modda
+da `normalize()` deterministik kalır. Ayrıntı: [docs/variants.tr.md](docs/variants.tr.md).
+
+<sub>1.0'da bu seçeneğin adı `deterministic` idi (`deterministic=False`,
+`variants=True` demektir); eski ad hâlâ `DeprecationWarning` ile çalışır.</sub>
 
 ### Canlı ASR için akış (streaming) ITN
 
@@ -166,6 +173,25 @@ yalnızca `stable_after` güncelleme boyunca değişmediyse *ve* bir gramerin h�
 uzatabileceği bir dizinin ortasında bitmiyorsa sabitlenir; dolayısıyla sayı
 erken dondurulmaz. Kesin sonuç her zaman cümlenin bütününün toplu
 normalizasyonuna eşittir. Ayrıntı: [docs/streaming.md](docs/streaming.md).
+
+### Terminal komutu dikte etmek
+
+```python
+from damga import InverseNormalizer, shell_form
+
+itn = InverseNormalizer()
+shell_form(itn.normalize("ls tire lah"))                     # 'ls -lah'
+shell_form(itn.normalize("git çift tire version"))           # 'git --version'
+shell_form(itn.normalize("cat dosya nokta txt"))             # 'cat dosya.txt'
+shell_form(itn.normalize("ps aux boru grep python"))         # 'ps aux | grep python'
+shell_form(itn.normalize("curl localhost iki nokta üst üste sekiz bin"))  # 'curl localhost:8000'
+```
+
+`shell_form`, kelimeyle söylenen sembolleri komut satırına çevirir: `tire` / `eksi` / `minus` → `-`, `çift tire` → `--`,
+`slash` / `bölü` → `/`, `nokta` → `.`, `boru` / `pipe` → `|`, `ve ve` → `&&`, `çift tırnak … çift tırnak` → `"…"`
+ve ~30 tane daha (tam tablo: `damga/tr/shell.py` içinde `SHELL_SYMBOLS`).  Küçük harfe çevirir, tanıyıcının
+noktalamasını atar ve sık yanlış duyulan komut adlarını düzeltir (`el es` → `ls`, `si di` → `cd`).  Yalnızca
+terminale gidecek metinde kullanın: düz yazıda "eksi", "nokta", "bölü" sıradan Türkçe kelimelerdir.
 
 ## Nasıl çalışır: token tabanlı, iki geçişli WFST boru hattı
 
