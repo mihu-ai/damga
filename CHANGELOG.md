@@ -4,7 +4,7 @@ All notable changes to this project are documented here.  The format follows
 [Keep a Changelog](https://keepachangelog.com/) and the project uses
 [Semantic Versioning](https://semver.org/).
 
-## [Unreleased]
+## [1.0.5] — 2026-10-24
 
 ### Changed
 - A word that starts with a capital keeps it when the grammar rewrites it ("Vatsap grubu" → `WhatsApp grubu`,

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "damga"
-version = "1.0.4"
+version = "1.0.5"
 description = "Damga: open-source multilingual text normalization (TN) and inverse text normalization (ITN) for Turkish, English, German, French, Spanish, Italian and Russian by Mihu.ai"
 readme = "README.md"
 requires-python = ">=3.9"

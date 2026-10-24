@@ -1,4 +1,4 @@
-__version__ = "1.0.4"
+__version__ = "1.0.5"
 
 from .api import DEFAULT_LANG, InverseNormalizer, Normalizer, TextNormalizer, available_languages, shell_form
 
