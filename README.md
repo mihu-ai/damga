@@ -104,7 +104,7 @@ Options (all keyword arguments, all optional):
 | `group_thousands=False` | write `25600` instead of `25.600` |
 | `group_four_digits=False` | ITN: no thousands dot in four-digit numbers (`2024 seçimleri`, `1500 kişi`); five digits and more keep it (needs pynini) |
 | `scale_words=True` | ITN: round millions and up keep their scale word (`beş milyon` → `5 milyon`, `elli altı milyar` → `56 milyar`) instead of `5.000.000` (needs pynini) |
-| `preserve_case=False` | lower-case everything instead of keeping the recognizer's casing on untouched words |
+| `preserve_case=False` | drop the recognizer's casing on untouched words (the grammar's own casing — brands — stays) |
 | `diagnostics=True` | `normalize_with_details()` keeps the intermediate record |
 | `repair_spelling=True` | restore diacritic-less (`yuz elli`) and glued (`onbeş`) number words before the grammars run; `False` feeds the text as is |
 | `backend="auto" \| "native" \| "pynini"` | runtime selection (see below) |

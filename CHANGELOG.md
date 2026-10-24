@@ -4,6 +4,14 @@ All notable changes to this project are documented here.  The format follows
 [Keep a Changelog](https://keepachangelog.com/) and the project uses
 [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Changed
+- A word that starts with a capital keeps it when the grammar rewrites it ("Vatsap grubu" → `WhatsApp grubu`,
+  also after a full stop); an ALL-CAPS original wins over a recased word (`İSTANBUL'DA` stays).  E-mail
+  addresses, numbers and brand casings (`iPhone'umun`) are not touched.
+- `Engine` takes an optional `post_hook` run on the finished text (for language modules).
+
 ## [1.0.4] — 2026-10-22
 
 ### Changed

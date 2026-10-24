@@ -102,7 +102,7 @@ Seçenekler (hepsi anahtar kelime argümanı, hepsi isteğe bağlı):
 | `group_thousands=False` | `25.600` yerine `25600` |
 | `group_four_digits=False` | ITN: dört basamaklı sayılarda binlik noktası yok (`2024 seçimleri`, `1500 kişi`); beş ve daha fazla basamak noktalı kalır (pynini gerekir) |
 | `scale_words=True` | ITN: yuvarlak milyon ve üstü ölçek kelimesiyle yazılır (`beş milyon` → `5 milyon`, `elli altı milyar` → `56 milyar`), `5.000.000` yerine (pynini gerekir) |
-| `preserve_case=False` | dokunulmayan kelimelerin tanıyıcı büyük/küçük harfini korumak yerine her şeyi küçült |
+| `preserve_case=False` | dokunulmayan kelimelerde tanıyıcının büyük/küçük harfini koruma (gramerin kendi yazımı — markalar — kalır) |
 | `diagnostics=True` | `normalize_with_details()` ara kaydı (record) saklar |
 | `repair_spelling=True` | aksansız (`yuz elli`) ve bitişik (`onbeş`) sayı sözcüklerini gramerlerden önce düzeltir; `False` metni olduğu gibi verir |
 | `backend="auto" \| "native" \| "pynini"` | çalışma zamanı seçimi (aşağıya bakın) |

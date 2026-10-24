@@ -60,6 +60,7 @@ class Engine:
         preserve_case: bool = True,
         diagnostics: bool = False,
         pre_hook: Callable[[str], str] | None = None,
+        post_hook: Callable[[str], str] | None = None,
         compiled_dir: pathlib.Path | None = None,
         default_config: bool = True,
         backend: str = "auto",
@@ -74,6 +75,7 @@ class Engine:
         self.mode = mode
         self.casing = casing
         self.pre_hook = pre_hook
+        self.post_hook = post_hook
         self.lowercase = lowercase
         self.preserve_case = preserve_case
         self.diagnostics = diagnostics
@@ -297,6 +299,22 @@ class Engine:
             clean = self.pre_hook(clean)
         return clean
 
+    def _keep_initial_capital(self, text: str, out: str) -> str:
+        """A sentence that began with a capital keeps it when its first word was rewritten (``Vatsap grubu`` →
+        ``WhatsApp grubu``); ``restore_case`` only covers unchanged words."""
+        first = next((c for c in text if c.isalpha()), "")
+        if not first or first == self.casing.lower(first):
+            return out
+        i = next((k for k, c in enumerate(out) if c not in " \"'(«„“"), None)
+        if i is None or not out[i].isalpha() or out[i] != self.casing.lower(out[i]):
+            return out
+        word = out[i:].split(" ", 1)[0]
+        if not all(c.isalpha() or c == "'" for c in word):     # a number, an e-mail: not a word that was recased
+            return out
+        if any(c != self.casing.lower(c) for c in word):        # a brand's own casing (``iPhone'umun``) stays
+            return out
+        return out[:i] + self.casing.upper(out[i]) + out[i + 1:]
+
     def finish(self, text: str, clean: str, out: str) -> str:
         """Everything after the writer: spacing around punctuation, casing, quotes, custom vocabulary."""
         out = self.postprocess(out)
@@ -309,9 +327,12 @@ class Engine:
                 out = out[:-1]
         if self.lowercase and self.preserve_case:
             lowered = clean if self.pre_hook is None else preprocess(text, lowercase=True, casing=self.casing)
-            out = restore_case(preprocess(text, lowercase=False), lowered, out)
+            out = restore_case(preprocess(text, lowercase=False), lowered, out, self.casing)
+            out = self._keep_initial_capital(text, out)
         if '"' in out:
             out = reattach_quotes(clean, out)
         if self.backend == "native" and self._vocab:
             out = self.apply_vocab(out)
+        if self.post_hook is not None:
+            out = self.post_hook(out)
         return out

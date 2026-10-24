@@ -69,7 +69,9 @@ def preprocess(text: str, lowercase: bool = True, keep_caps: bool = True, casing
 _CASE_WINDOW = 400
 
 
-def restore_case(original: str, lowered: str, output: str) -> str:
+def restore_case(original: str, lowered: str, output: str, casing: Casing = TURKISH) -> str:
+    """Put the original casing back on the words the grammar left as they were.  A word the grammar only
+    recased (``istanbul'da`` → ``İstanbul'da``) keeps the grammar's casing unless the original was ALL CAPS."""
     import difflib
     if original == lowered:
         return output
@@ -77,20 +79,33 @@ def restore_case(original: str, lowered: str, output: str) -> str:
     if len(orig) != len(low):
         return output
     res = list(out)
+    out_low = [casing.lower(t) for t in out]
     i = j = 0
     while i < len(low) and j < len(out):
         last = i + _CASE_WINDOW >= len(low) or j + _CASE_WINDOW >= len(out)
-        a, b = (low[i:], out[j:]) if last else (low[i:i + _CASE_WINDOW], out[j:j + _CASE_WINDOW])
+        a, b = (low[i:], out_low[j:]) if last else (low[i:i + _CASE_WINDOW], out_low[j:j + _CASE_WINDOW])
         limit = len(a) if last else len(a) - _CASE_WINDOW // 4
         end = later = None
         for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(a=a, b=b, autojunk=False).get_opcodes():
+            if tag == "replace" and i1 < limit:
+                # a rewritten word (vatsap → WhatsApp) keeps the capital it had
+                o, w = orig[i + i1], out[j + j1]
+                plain = w.rstrip(".,;:!?") and all(c.isalpha() or c == "'" for c in w.rstrip(".,;:!?"))
+                # (a word with a capital inside, ``iPhone'umun``, keeps its own casing)
+                if plain and o[:1] == casing.upper(o[:1]) and o[:1].isalpha() and o != casing.upper(o) \
+                        and w == casing.lower(w):
+                    res[j + j1] = casing.upper(w[:1]) + w[1:]      # not an e-mail or a number: fatma.kaya@… stays
+                continue
             if tag != "equal":
                 continue
             if i1 >= limit:
                 later = later or (i1, j1)
                 continue
             i2, j2 = min(i2, limit), j1 + min(i2, limit) - i1
-            res[j + j1:j + j2] = orig[i + i1:i + i2]
+            for k in range(i2 - i1):
+                o, w = orig[i + i1 + k], out[j + j1 + k]
+                if w == low[i + i1 + k] or (o == casing.upper(o) and o != casing.lower(o)):
+                    res[j + j1 + k] = o
             end = (i2, j2)
         if last:
             break
